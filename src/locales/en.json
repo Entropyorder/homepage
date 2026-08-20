@@ -288,33 +288,6 @@
     "url": "https://arxiv.org/abs/2501.14249"
    }
   },
-  "math-hard": {
-   "name": "Hard Math Problems",
-   "desc": "Text-based dataset for hard mathematical reasoning covering analysis, algebra, number theory and geometry, with problem statements, full solutions and answers — for training and evaluating multi-step proof, symbolic reasoning and answer generation.",
-   "scale": "存量 3,000",
-   "tags": [
-    "Math Reasoning",
-    "Symbolic Reasoning",
-    "Solution Generation"
-   ],
-   "production": [
-    "专家构建",
-    "质量审核"
-   ],
-   "modalities": [
-    "text"
-   ],
-   "inventory": "3,000",
-   "weeklyOutput": "1,000",
-   "brief": "Each problem is written by mathematics experts with a complete solution process, emphasizing multi-step proof and symbolic manipulation. Suitable as training data and as a high-discrimination evaluation set for mathematical reasoning.",
-   "structure": "{\n  \"problem\": \"证明：对任意正整数 n，...\",\n  \"field\": \"number_theory\",\n  \"solution\": \"首先归纳基础情形...\",\n  \"answer\": \"...\",\n  \"difficulty\": 5\n}",
-   "paper": {
-    "title": "MATH Dataset",
-    "authors": "Hendrycks et al.",
-    "venue": "NeurIPS 2021",
-    "url": "https://arxiv.org/abs/2103.03874"
-   }
-  },
   "sfe": {
    "name": "SFE",
    "desc": "SFE benchmark for evaluating MLLM scientific cognition from perception to reasoning. Data created by professors (associate level and above) and senior grad students from Tsinghua and other top-985 universities based on their research experience, covering 5 disciplines (astronomy, chemistry, earth science, life science, materials science).",
@@ -992,6 +965,64 @@
    "modalities": [
     "text",
     "image"
+   ]
+  },
+  "math-high-school": {
+   "name": "Math Competition (High School)",
+   "desc": "A reasoning dataset for high school math competition problems covering algebra, combinatorics, geometry, and number theory.",
+   "brief": "High school math competition problems",
+   "tags": [
+    "math reasoning",
+    "competition",
+    "symbolic reasoning"
+   ],
+   "scale": "10",
+   "inventory": "10 题",
+   "production": [
+    "专家构建",
+    "质量审核"
+   ],
+   "modalities": [
+    "text"
+   ]
+  },
+  "math-university": {
+   "name": "University Math",
+   "desc": "A reasoning dataset for undergraduate math problems covering real analysis, complex analysis, functional analysis, probability, and dynamical systems.",
+   "brief": "Undergraduate math problems",
+   "tags": [
+    "math reasoning",
+    "analysis",
+    "proof construction"
+   ],
+   "scale": "20",
+   "inventory": "20 题",
+   "production": [
+    "专家构建",
+    "质量审核"
+   ],
+   "modalities": [
+    "text"
+   ]
+  },
+  "math-research": {
+   "name": "Research Math",
+   "desc": "A research-level math reasoning dataset covering algebra, analysis, combinatorics, topology, number theory, and probability with Lean formal proofs.",
+   "brief": "Research-level math with Lean formal proofs",
+   "tags": [
+    "math reasoning",
+    "formal proof",
+    "advanced reasoning"
+   ],
+   "scale": "20",
+   "inventory": "20 题",
+   "production": [
+    "专家构建",
+    "质量审核"
+   ],
+   "modalities": [
+    "text",
+    "code"
    ]
   }
  }
