@@ -1024,6 +1024,31 @@
     "text",
     "code"
    ]
+  },
+  "exploitgym": {
+   "name": "Real-World Exploit Task Dataset",
+   "desc": "A vulnerability-exploitation task dataset built from real projects and real CVEs. Each task ships a vulnerability write-up, vulnerable/fixed dual-version environments (Dockerfile + source + prebuilt binaries), reference PoCs/exploits, differential verification artifacts, and the official patch — covering heap overflow LPE, format-string sandbox escape, type confusion, and arbitrary file read. Built for training and evaluating models on vulnerability analysis, exploit construction, and security reasoning.",
+   "brief": "Four real-CVE exploitation tasks on real projects: write-up, dual-version environments, verifiable exploits, differential checks — covering LPE, sandbox escape, type confusion and arbitrary file read, all verified inside the images.",
+   "tags": [
+    "Exploitation",
+    "Real CVE",
+    "Binary Security",
+    "Privilege Escalation",
+    "Sandbox Escape",
+    "Type Confusion",
+    "Arbitrary File Read"
+   ],
+   "scale": "存量 4 个真实 CVE 任务（本批次，持续扩充中）",
+   "inventory": "4",
+   "production": [
+    "专家构建",
+    "AI 辅助审核",
+    "专家交叉评判",
+    "差分验证"
+   ],
+   "modalities": [
+    "text"
+   ]
   }
  }
 }
