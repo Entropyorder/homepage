@@ -283,8 +283,6 @@
    "structure": "{\n  \"query\": \"在标准条件下，以下哪个反应的 ΔG° 最负？\",\n  \"rubric\": \"需给出正确选项及热力学推导过程\",\n  \"answer\": \"选项 C，推理链：...\",\n  \"domain\": \"chemistry\",\n  \"difficulty\": 4\n}",
    "paper": {
     "title": "Humanity's Last Exam (HLE)",
-    "authors": "Phan et al.",
-    "venue": "arXiv 2025",
     "url": "https://arxiv.org/abs/2501.14249"
    }
   },
@@ -309,8 +307,6 @@
    "structure": "{\n  \"question\": \"根据图中 XRD 图谱判断样品物相...\",\n  \"image\": \"xrd_pattern.png\",\n  \"answer\": \"...\",\n  \"discipline\": \"materials\",\n  \"level\": \"expert\"\n}",
    "paper": {
     "title": "Scientists' First Exam (SFE)",
-    "authors": "Zhou et al.",
-    "venue": "arXiv 2025",
     "url": "https://arxiv.org/abs/2506.10565"
    }
   },
@@ -335,8 +331,6 @@
    "structure": "{\n  \"video\": \"circuit_lab.mp4\",\n  \"question\": \"实验中示波器波形变化说明...\",\n  \"answer\": \"...\",\n  \"subject\": \"physics\"\n}",
    "paper": {
     "title": "Video-MME",
-    "authors": "Fu et al.",
-    "venue": "arXiv 2024",
     "url": "https://arxiv.org/abs/2405.21075"
    }
   },
@@ -363,8 +357,6 @@
    "structure": "{\n  \"question\": \"...(original language)...\",\n  \"subject\": \"physics\",\n  \"lang\": \"de\",\n  \"level\": \"k12\",\n  \"answer\": \"B\"\n}",
    "paper": {
     "title": "ScienceQA",
-    "authors": "Lu et al.",
-    "venue": "NeurIPS 2022",
     "url": "https://arxiv.org/abs/2209.09513"
    }
   },
@@ -389,8 +381,6 @@
    "structure": "{\n  \"image\": \"photosynthesis_diagram.png\",\n  \"question\": \"图中标注③代表的结构是...\",\n  \"answer\": \"...\",\n  \"domain\": \"biology\"\n}",
    "paper": {
     "title": "AI2D",
-    "authors": "Kembhavi et al.",
-    "venue": "ECCV 2016",
     "url": "https://arxiv.org/abs/1603.07396"
    }
   },
@@ -414,8 +404,6 @@
    "structure": "{\n  \"image\": \"cell_microscopy.png\",\n  \"question\": \"图中箭头所指细胞器及其功能是...\",\n  \"answer\": \"...\",\n  \"magnification\": \"400x\"\n}",
    "paper": {
     "title": "MicroVQA",
-    "authors": "Burgon et al.",
-    "venue": "arXiv 2025",
     "url": "https://arxiv.org/abs/2505.15624"
    }
   },
@@ -439,8 +427,6 @@
    "structure": "{\n  \"image\": \"seismic_profile.png\",\n  \"question\": \"该剖面反映的构造样式为...\",\n  \"answer\": \"...\",\n  \"field\": \"geology\"\n}",
    "paper": {
     "title": "MSEarth_MCQ",
-    "authors": "MSEarth Team",
-    "venue": "arXiv 2025",
     "url": "https://arxiv.org/abs/2507.08122"
    }
   },
@@ -466,8 +452,6 @@
    "structure": "{\n  \"stream\": \"cooking_demo.mp4\",\n  \"respond_at\": \"00:02:31\",\n  \"response\": \"注意，下一步需要先关火再...\",\n  \"scenario\": \"tutorial\"\n}",
    "paper": {
     "title": "StreamingBench",
-    "authors": "Lin et al.",
-    "venue": "arXiv 2024",
     "url": "https://arxiv.org/abs/2501.10829"
    }
   },
@@ -493,8 +477,6 @@
    "structure": "{\n  \"clip\": \"orchestra_30s.mp4\",\n  \"audio_desc\": \"弦乐群渐强，定音鼓在 12s 进入...\",\n  \"video_desc\": \"指挥特写，镜头缓慢推近...\",\n  \"qa\": [{\"q\": \"...\", \"a\": \"...\"}]\n}",
    "paper": {
     "title": "MUSIC-AVQA",
-    "authors": "Li et al.",
-    "venue": "CVPR 2022",
     "url": "https://arxiv.org/abs/2203.12196"
    }
   },
@@ -518,8 +500,6 @@
    "structure": "{\n  \"clip\": \"shot_042.mp4\",\n  \"fps\": 6,\n  \"frames\": [{\"t\": 0, \"motion\": \"dolly_in\", \"speed\": 0.7}, ...],\n  \"checked\": true\n}",
    "paper": {
     "title": "MovieShots",
-    "authors": "MovieShots Team",
-    "venue": "arXiv 2024",
     "url": "https://arxiv.org/abs/2404.02095"
    }
   },
@@ -544,8 +524,6 @@
    "structure": "{\n  \"lang\": \"sw\",\n  \"task\": \"open_qa\",\n  \"image\": \"market_scene.jpg\",\n  \"question\": \"...(swahili)...\",\n  \"answer\": \"...\"\n}",
    "paper": {
     "title": "M3Exam",
-    "authors": "Zhang et al.",
-    "venue": "NeurIPS 2023",
     "url": "https://arxiv.org/abs/2306.05179"
    }
   },
@@ -568,8 +546,6 @@
    "structure": "{\n  \"image\": \"mirror_ambiguous.png\",\n  \"trap\": \"mirror_reversal\",\n  \"question\": \"图中物体实际朝向左还是右？\",\n  \"answer\": \"左\"\n}",
    "paper": {
     "title": "IllusionVQA",
-    "authors": "IllusionVQA Team",
-    "venue": "arXiv 2024",
     "url": "https://arxiv.org/abs/2403.15952"
    }
   },
@@ -594,8 +570,6 @@
    "structure": "{\n  \"image\": \"quarterly_revenue_chart.png\",\n  \"question\": \"Q3 环比增长约为多少？\",\n  \"answer\": \"约 18%\",\n  \"chart_type\": \"bar\"\n}",
    "paper": {
     "title": "InfographicVQA",
-    "authors": "Mathew et al.",
-    "venue": "WACV 2022",
     "url": "https://arxiv.org/abs/2104.12756"
    }
   },
@@ -622,8 +596,6 @@
    "structure": "{\n  \"image\": \"porcelain_vase_hd.jpg\",\n  \"category\": \"瓷器\",\n  \"appreciations\": [\"釉面开片自然...\", \"...\"],\n  \"era\": \"宋\"\n}",
    "paper": {
     "title": "WikiArt",
-    "authors": "WikiArt",
-    "venue": "2016",
     "url": "https://www.wikiart.org/"
    }
   },
@@ -650,8 +622,6 @@
    "structure": "{\n  \"problem_id\": \"yuki_2941\",\n  \"statement\": \"...\",\n  \"testcases\": {\"count\": 1200, \"gen\": \"expert\"},\n  \"checker\": \"interactor.py\",\n  \"submissions\": [...]\n}",
    "paper": {
     "title": "Yukicoder",
-    "authors": "yukicoder",
-    "venue": "Online Judge",
     "url": "https://yukicoder.me/"
    }
   },
@@ -675,8 +645,6 @@
    "structure": "{\n  \"background\": \"反应扩散方程的数值求解...\",\n  \"interface\": \"def solve_rd(u0, t): ...\",\n  \"subtasks\": [...],\n  \"tests\": [...],\n  \"report\": \"validation.pdf\"\n}",
    "paper": {
     "title": "SciCode",
-    "authors": "Tian et al.",
-    "venue": "NeurIPS 2024",
     "url": "https://arxiv.org/abs/2407.13168"
    }
   },
@@ -700,8 +668,6 @@
    "structure": "{\n  \"problem_id\": \"oj_ext_0173\",\n  \"pass@2(seed-2.0-pro)\": 0,\n  \"testcases\": 1000,\n  \"submissions\": [...]\n}",
    "paper": {
     "title": "CodeContests",
-    "authors": "Li et al.",
-    "venue": "Science 2022",
     "url": "https://arxiv.org/abs/2203.07814"
    }
   },
@@ -728,8 +694,6 @@
    "structure": "{\n  \"goal\": \"部署服务并修复启动失败\",\n  \"events\": [{\"type\": \"llm_call\", ...}, {\"type\": \"exec\", ...}],\n  \"turns\": 47,\n  \"delivered\": true\n}",
    "paper": {
     "title": "GAIA",
-    "authors": "Mialon et al.",
-    "venue": "arXiv 2023",
     "url": "https://arxiv.org/abs/2311.12983"
    }
   },
@@ -755,8 +719,6 @@
    "structure": "{\n  \"query\": \"为该零售企业生成月度经营分析\",\n  \"attachments\": [...],\n  \"expert_deliverable\": \"report.docx\",\n  \"rubric\": {...},\n  \"model_traces\": [...]\n}",
    "paper": {
     "title": "GDPval",
-    "authors": "OpenAI",
-    "venue": "2025",
     "url": "https://openai.com/index/gdpval/"
    }
   },
@@ -782,8 +744,6 @@
    "structure": "{\n  \"skill\": \"合同关键条款抽取\",\n  \"env\": \"docker://skillbench/legal\",\n  \"data\": [...],\n  \"tests\": [...],\n  \"solution\": \"...\",\n  \"trace\": [...]\n}",
    "paper": {
     "title": "skillsbench",
-    "authors": "SkillBench Team",
-    "venue": "2025",
     "url": "https://github.com/Entropyorder"
    }
   },
@@ -809,8 +769,6 @@
    "structure": "{\n  \"question\": \"...需要5跳以上检索的问题...\",\n  \"hops\": 6,\n  \"evidence_chain\": [...],\n  \"answer\": \"...\",\n  \"source\": \"expert_curated\"\n}",
    "paper": {
     "title": "FRAMES",
-    "authors": "Krishna et al.",
-    "venue": "arXiv 2024",
     "url": "https://arxiv.org/abs/2409.12941"
    }
   },
@@ -833,8 +791,6 @@
    "structure": "{\n  \"scenario\": \"真实业务咨询场景\",\n  \"turns\": [{\"q\": \"...\", \"evidence\": [...], \"a\": \"...\"}],\n  \"expertise\": \"legal\"\n}",
    "paper": {
     "title": "BrowseComp",
-    "authors": "OpenAI",
-    "venue": "2025",
     "url": "https://openai.com/index/browsecomp/"
    }
   },
@@ -1049,6 +1005,62 @@
    "modalities": [
     "text"
    ]
+  },
+  "clawmark": {
+   "name": "ClawMark 多日多模态办公助手基准",
+   "desc": "面向办公助手场景的多日、多模态、多环境任务基准：15 个任务覆盖产品/运营/HR/电商/记者/保险/高管助理等 8 类岗位，每个任务模拟 1-3 个工作日，Agent 需在文件、邮箱、Notion、Google Sheets 等真实工具后端上跨阶段连续决策，并从截图、报道、音频、视频、官方数据等原始证据中提取事实。全部为确定性规则化评分（无 LLM 裁判），checker 14-22 个/任务。",
+   "brief": "办公助手多日多模态任务基准，含真实公开数据证据，确定性评分。",
+   "tags": [
+    "多日长程",
+    "多模态证据",
+    "多环境工具",
+    "规则化评分",
+    "办公助手"
+   ],
+   "scale": "15 tasks · 8 domains · 262 checkers",
+   "inventory": "15",
+   "structure": "tasks/{domain}/task{N}/: task.py(运行时唯一加载: METADATA/stage/checker/RUBRIC) + assets/(人设+input素材) + inject/(阶段投递)",
+   "production": [
+    "专家构建",
+    "真实公开数据爬取",
+    "脚本生成"
+   ],
+   "modalities": [
+    "text",
+    "image",
+    "audio",
+    "video"
+   ],
+   "paper": {
+    "title": "ClawMark: A Living-World Benchmark for Multi-Day, Multimodal Coworker Agents",
+    "authors": "Evolvent AI",
+    "url": "https://github.com/evolvent-ai/ClawMark"
+   }
+  },
+  "math-hard": {
+   "name": "数学难题数据集",
+   "desc": "面向高难度数学推理的文本题数据集，覆盖分析、代数、数论、几何等方向，包含题干、解题过程与答案，适用于训练和评估模型的多步数学证明、符号推理和答案生成能力。",
+   "brief": "每道题目由数学专家编写并附完整解题过程，强调多步证明与符号演算的正确性，适合作为数学推理能力的训练与高区分度评估数据。",
+   "tags": [
+    "数学推理",
+    "符号推理",
+    "解题过程生成"
+   ],
+   "scale": "存量 3,000",
+   "inventory": "3,000",
+   "weeklyOutput": "1,000",
+   "structure": "{\n  \"problem\": \"证明：对任意正整数 n，...\",\n  \"field\": \"number_theory\",\n  \"solution\": \"首先归纳基础情形...\",\n  \"answer\": \"...\",\n  \"difficulty\": 5\n}",
+   "production": [
+    "专家构建",
+    "质量审核"
+   ],
+   "modalities": [
+    "text"
+   ],
+   "paper": {
+    "title": "MATH Dataset",
+    "url": "https://arxiv.org/abs/2103.03874"
+   }
   }
  }
 }
