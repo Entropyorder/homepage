@@ -8,6 +8,7 @@ export const DATASET_CATEGORIES = [
       'ebooks',
       'hard-qa',
       'hle',
+      'math-hard',
       'math-high-school',
       'math-research',
       'math-university',
@@ -52,6 +53,7 @@ export const DATASET_CATEGORIES = [
     artifact: 'AgentArtifact',
     datasets: [
       'agentos-trajectory',
+      'clawmark',
       'fable5',
       'gdpval-extension',
       'open-challenge',
