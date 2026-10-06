@@ -81,3 +81,20 @@ coverage/
 
 # Local datasets, generated artifacts and runtime state
 
+# Other local data and embedded project workspaces
+**/.DS_Store
+**/.claude/
+**/.omp/
+**/.omx/
+**/.worktrees/
+*.7z
+*.aux
+*.bak
+*.bbl
+*.blg
+*.bz2
+*.flac
+*.mov
+*.out
+*.ses
+*.toc
