@@ -1,0 +1,895 @@
+{
+  "nav": {
+    "home": "主页",
+    "products": "产品",
+    "blog": "博客"
+  },
+  "hero": {
+    "slogan": "熵基秩序 · EntropyOrder",
+    "subtitle": "构建高质量数据，驱动智能未来",
+    "scrollHint": "查看我们的专家数据构建流程"
+  },
+  "products": {
+    "pageTitle": "产品与服务",
+    "pageSubtitle": "我们提供 {{count}} 个高质量数据集产品",
+    "totalCount": "总产品数",
+    "title": "产品与服务",
+    "categories": {
+      "expert": {
+        "name": "科学推理"
+      },
+      "multimodal": {
+        "name": "多模态"
+      },
+      "code": {
+        "name": "代码能力"
+      },
+      "agent": {
+        "name": "信息检索与 Agent"
+      }
+    },
+    "card": {
+      "scale": "数据规模",
+      "contact": "联系获取样例",
+      "viewDetail": "查看详情"
+    },
+    "modal": {
+      "title": "申请数据集样例",
+      "name": "姓名",
+      "org": "单位",
+      "email": "邮箱",
+      "purpose": "用途说明",
+      "submit": "提交申请",
+      "cancel": "取消"
+    },
+    "detail": {
+      "overview": "概述",
+      "dataStructure": "数据结构",
+      "relatedPaper": "相关论文",
+      "close": "关闭",
+      "contactSample": "联系获取样例",
+      "sampleDownload": "数据样例下载",
+      "samplePasswordPlaceholder": "输入访问密码",
+      "samplePasswordHint": "密码由商务对接提供，解锁后本次会话内所有样例可直接下载。",
+      "unlock": "解锁",
+      "downloadNow": "下载",
+      "wrongPassword": "密码错误，请重试",
+      "lockedHint": "尝试次数过多，请 {{seconds}} 秒后再试"
+    },
+    "filter": {
+      "searchPlaceholder": "搜索产品名称或简介...",
+      "capabilities": "能力领域",
+      "production": "生产方式",
+      "modalities": "数据模态",
+      "matchCount": "匹配 {{count}} 个产品",
+      "clearAll": "清除筛选",
+      "activeFilters": "当前筛选",
+      "empty": "暂无匹配的数据集产品",
+      "modalitiesText": "文本",
+      "modalitiesImage": "图片",
+      "modalitiesVideo": "视频",
+      "modalitiesAudio": "音频"
+    }
+  },
+  "expertData": {
+    "tag": "为什么选择专家数据",
+    "title": "专家知识，是能力跃迁的基础",
+    "subtitle": "高质量专家标注数据在训练效率、推理深度和领域精准度上，远超群体众包数据",
+    "methodologyImages": [
+      {
+        "title": "专家精准标注"
+      },
+      {
+        "title": "知识图谱构建"
+      },
+      {
+        "title": "多专家交叉审核"
+      }
+    ],
+    "stats": [
+      {
+        "value": "50+",
+        "label": "领域专家"
+      },
+      {
+        "value": "4",
+        "label": "数据集"
+      },
+      {
+        "value": "95%",
+        "label": "通过率"
+      },
+      {
+        "value": "3×",
+        "label": "效率提升"
+      }
+    ],
+    "comparison": {
+      "expertTitle": "专家标注",
+      "expertPoints": [
+        "完整推理链路",
+        "多专家交叉验证",
+        "领域知识深度理解",
+        "高难度鉴别性题目"
+      ],
+      "crowdTitle": "众包标注",
+      "crowdPoints": [
+        "推理链路断裂",
+        "单一标注无校验",
+        "表面理解无深度",
+        "难度不足易被破解"
+      ]
+    },
+    "pipeline": {
+      "heading": "人机协作标注流程",
+      "passLabel": "通过",
+      "passDesc": "进入数据集",
+      "rejectLabel": "废弃",
+      "rejectDesc": "不满足难度标准则丢弃",
+      "papersLabel": "相关论文",
+      "papers": [
+        {
+          "title": "AutoQG: An Automated Framework for Question Generation from Scientific Papers",
+          "authors": "AutoQG Team",
+          "venue": "ICLR 2025",
+          "url": "https://openreview.net/forum?id=AutoQG",
+          "img": "papers/autoQG.png"
+        },
+        {
+          "title": "GPQA: A Graduate-Level Google-Proof Q&A Benchmark",
+          "authors": "Rein et al.",
+          "venue": "arXiv 2023",
+          "url": "https://arxiv.org/abs/2311.12022",
+          "img": "papers/gpqa.png"
+        },
+        {
+          "title": "MMLU-Pro: A More Robust and Challenging MultiTask Language Understanding Benchmark",
+          "authors": "Wang et al.",
+          "venue": "arXiv 2024",
+          "url": "https://arxiv.org/abs/2406.08064",
+          "img": "papers/mmlu_pro.png"
+        },
+        {
+          "title": "SCBench: A KV Cache-Centric Benchmark for Long Context",
+          "authors": "Li et al.",
+          "venue": "arXiv 2025",
+          "url": "https://arxiv.org/abs/2412.12119",
+          "img": "papers/scbench.png"
+        }
+      ],
+      "detailedSteps": [
+        {
+          "title": "论文预处理与结构化解析",
+          "desc": "前沿 LLM 对论文进行章节感知（Section-Aware）拆分，将摘要、方法、实验、结论等分段处理，输出结构化摘要、核心概念列表、关键实体与关系候选集等",
+          "type": "ai",
+          "badge": "AI"
+        },
+        {
+          "title": "对口专家精读与深度理解",
+          "desc": "从专家库中匹配方向完全对口的领域专家（博士及以上），关注论文中的方法论细节、隐含假设、学术脉络和知识边界",
+          "type": "human",
+          "badge": "专家"
+        },
+        {
+          "title": "知识图谱协同构建",
+          "desc": "AI 基于 AutoQG 论文中的本体引导+章节感知提示方法，从论文中抽取实体-关系-实体三元组，构建知识图谱。人类专家负责审校、补充遗漏、区分显性知识图谱和需要领域知识的隐含关联图谱。",
+          "type": "hybrid",
+          "badge": "AI + 专家"
+        },
+        {
+          "title": "基于推理链的高鉴别力问题设计",
+          "desc": "基于知识图谱中的多跳推理路径，结合专家领域知识，设计含有复杂推理链、接近学科边界的高鉴别力问题",
+          "type": "human",
+          "badge": "专家"
+        },
+        {
+          "title": "AI 难度标定与一致性验证",
+          "desc": "由前沿模型交叉验证题目难度，将所有模型均能答对的简单题目打回修改，将所有模型均答错的题目交由人工复核答案正确性",
+          "type": "ai",
+          "badge": "AI"
+        },
+        {
+          "title": "多专家交叉盲审",
+          "desc": "采用双盲评审协议，每道题目由至少三位独立专家从相关性、可答性、干扰项质量、流畅度、推理深度、证据可追溯性等多个维度打分，并自动进行信度检验。",
+          "type": "human",
+          "badge": "专家"
+        },
+        {
+          "title": "终审决策与数据入库",
+          "desc": "基于学科均衡性、难度梯度、问题类型等关注点，由自身专家终审决定是否入库",
+          "type": "human",
+          "badge": "专家"
+        }
+      ],
+      "quote": "一千万条平庸对话，不如一千条顶尖专家死磕的Corner Case"
+    }
+  },
+  "ai4ss": {
+    "tag": "核心愿景",
+    "title": "AI4SS4AI",
+    "subtitle": "以社会科学理解人类多样性，让人工智能真正回馈真实世界",
+    "fromReal": "FROM REAL",
+    "toReal": "TO REAL",
+    "loopDesc": "从真实世界出发，经由社会科学与 AI 的双向赋能，最终回归并改善真实世界",
+    "personaCallout": {
+      "stat": "1,000,000+",
+      "label": "Persona × Skills 组合",
+      "desc": "百万级多维人格与技能标签体系，涵盖价值观体系、认知风格、专业技能与文化背景，构建前所未有的数据多样性基础"
+    },
+    "steps": [
+      {
+        "title": "真实世界观察",
+        "desc": "从真实的社会行为、文化差异和人际交互中采集第一手数据，保留真实人类行为的复杂性"
+      },
+      {
+        "title": "社会科学萃取",
+        "desc": "以成熟的心理学、社会学理论框架提炼人格特征与行为模式，赋予数据科学解释力"
+      },
+      {
+        "title": "多样人格建模",
+        "desc": "构建覆盖广泛价值观、认知风格与文化背景的人格画像库，实现前所未有的数据多样性"
+      },
+      {
+        "title": "高质量数据生成",
+        "desc": "由人格库驱动，批量生成兼具多样性、真实性和一致性的大规模训练数据"
+      },
+      {
+        "title": "AGI 赋能现实",
+        "desc": "让 AI 真正理解人类多样性，在教育、医疗、决策等真实场景中做出更明智、更有温度的判断"
+      }
+    ]
+  },
+  "blog": {
+    "tag": "博客",
+    "title": "最新动态",
+    "subtitle": "探索数据智能的前沿洞察与技术实践"
+  },
+  "footer": {
+    "aboutTitle": "关于我们",
+    "contactTitle": "联系我们",
+    "email": "jscott2402@gmail.com",
+    "address": "北京市海淀区同方科技大厦D座5层B7",
+    "form": {
+      "name": "姓名",
+      "email": "邮箱",
+      "subject": "主题",
+      "message": "留言内容",
+      "submit": "发送邮件",
+      "success": "邮件已发送，我们会尽快与您联系！",
+      "error": "发送失败，请稍后重试。"
+    },
+    "copyright": "© 2025 熵基秩序 EntropyOrder. All rights reserved.",
+    "backToTop": "返回顶部"
+  },
+  "datasets": {
+    "hle": {
+      "name": "HLE",
+      "desc": "高水平多模态专家推理数据集，由清华大学专家团队进行构建，团队共有约100名活跃的清华大学在读硕博，在人在回路系统中进行数据构建，包含高质量解题思路（思维链），并辅以MAS多重质量验证把关。",
+      "scale": "存量 2,000",
+      "tags": [
+        "科学推理",
+        "图片推理"
+      ],
+      "production": [
+        "专家构建（HITL）"
+      ],
+      "modalities": [
+        "text",
+        "image"
+      ],
+      "inventory": "2,000",
+      "weeklyOutput": "400",
+      "brief": "HLE（Hard-Level Evaluation）数据集是面向前沿大模型的高难度科学推理评估基准。题目由领域专家精心设计与审核，覆盖 12+ 学科，要求模型具备深层推理能力而非表面匹配。每道题配有完整推理链标注与难度评级。",
+      "structure": "{\n  \"query\": \"在标准条件下，以下哪个反应的 ΔG° 最负？\",\n  \"rubric\": \"需给出正确选项及热力学推导过程\",\n  \"answer\": \"选项 C，推理链：...\",\n  \"domain\": \"chemistry\",\n  \"difficulty\": 4\n}",
+      "paper": {
+        "title": "Humanity's Last Exam (HLE)",
+        "authors": "Phan et al.",
+        "venue": "arXiv 2025",
+        "url": "https://arxiv.org/abs/2501.14249"
+      }
+    },
+    "math-hard": {
+      "name": "数学难题数据集",
+      "desc": "面向高难度数学推理的文本题数据集，覆盖分析、代数、数论、几何等方向，包含题干、解题过程与答案，适用于训练和评估模型的多步数学证明、符号推理和答案生成能力。",
+      "scale": "存量 3,000",
+      "tags": [
+        "数学推理",
+        "符号推理",
+        "解题过程生成"
+      ],
+      "production": [
+        "专家构建",
+        "质量审核"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "inventory": "3,000",
+      "weeklyOutput": "1,000",
+      "brief": "每道题目由数学专家编写并附完整解题过程，强调多步证明与符号演算的正确性，适合作为数学推理能力的训练与高区分度评估数据。",
+      "structure": "{\n  \"problem\": \"证明：对任意正整数 n，...\",\n  \"field\": \"number_theory\",\n  \"solution\": \"首先归纳基础情形...\",\n  \"answer\": \"...\",\n  \"difficulty\": 5\n}",
+      "paper": {
+        "title": "MATH Dataset",
+        "authors": "Hendrycks et al.",
+        "venue": "NeurIPS 2021",
+        "url": "https://arxiv.org/abs/2103.03874"
+      }
+    },
+    "sfe": {
+      "name": "SFE",
+      "desc": "SFE 基准，旨在对 MLLM 从感知到推理的科学认知能力进行评估。数据由清华大学等 top 985 高校的副高级以上职称教授、高年级研究生根据自身科研经验创制，涵盖 5 个学科（天文学、化学、地球科学、生命科学、材料科学）。",
+      "scale": "存量 3,000",
+      "tags": [
+        "科学推理",
+        "图片推理"
+      ],
+      "production": [
+        "专家构建"
+      ],
+      "modalities": [
+        "text",
+        "image"
+      ],
+      "inventory": "3,000",
+      "weeklyOutput": "1,000",
+      "brief": "SFE benchmark for evaluating MLLM scientific cognition from perception to reasoning. Data created by professors (associate level and above) and senior grad students from Tsinghua and other top-985 universities based on their research experience, covering 5 disciplines (astronomy, chemistry, earth science, life science, materials science).",
+      "structure": "{\n  \"question\": \"根据图中 XRD 图谱判断样品物相...\",\n  \"image\": \"xrd_pattern.png\",\n  \"answer\": \"...\",\n  \"discipline\": \"materials\",\n  \"level\": \"expert\"\n}",
+      "paper": {
+        "title": "Scientists' First Exam (SFE)",
+        "authors": "Zhou et al.",
+        "venue": "arXiv 2025",
+        "url": "https://arxiv.org/abs/2506.10565"
+      }
+    },
+    "stem-video": {
+      "name": "STEM专业视频推理",
+      "desc": "由专家构建的STEM学科专业视频理解数据集，考察模型对理工科教学、实验等视频内容的深度推理与知识关联能力。",
+      "scale": "存量 1,000",
+      "tags": [
+        "科学推理",
+        "视频推理",
+        "长视频推理"
+      ],
+      "production": [
+        "专家构建"
+      ],
+      "modalities": [
+        "video"
+      ],
+      "inventory": "1,000",
+      "weeklyOutput": "500",
+      "brief": "视频内容来自真实理工科教学与实验场景，问题设计强调对动态过程、实验现象与学科知识的关联推理，而非简单内容描述。",
+      "structure": "{\n  \"video\": \"circuit_lab.mp4\",\n  \"question\": \"实验中示波器波形变化说明...\",\n  \"answer\": \"...\",\n  \"subject\": \"physics\"\n}",
+      "paper": {
+        "title": "Video-MME",
+        "authors": "Fu et al.",
+        "venue": "arXiv 2024",
+        "url": "https://arxiv.org/abs/2405.21075"
+      }
+    },
+    "crosslingual-k12-stem": {
+      "name": "跨语言K12与大学难度STEM数据集",
+      "desc": "面向K12与大学阶段的多语言STEM学科数据集，题目覆盖数学、物理、化学、生物等核心科目，支持模型在多语言教育场景下的学科推理能力提升。",
+      "scale": "存量 60,000",
+      "tags": [
+        "科学推理",
+        "图片推理",
+        "多语言理解"
+      ],
+      "production": [
+        "采集",
+        "专家构建"
+      ],
+      "modalities": [
+        "text",
+        "image"
+      ],
+      "inventory": "60,000",
+      "weeklyOutput": "2,000",
+      "brief": "题目从各国官方教材与练习册采集并由母语教育专家多轮校验，保留原有逻辑与文化语境，覆盖 20+ 语言，是评估跨语言学科能力的理想基准。",
+      "structure": "{\n  \"question\": \"...(original language)...\",\n  \"subject\": \"physics\",\n  \"lang\": \"de\",\n  \"level\": \"k12\",\n  \"answer\": \"B\"\n}",
+      "paper": {
+        "title": "ScienceQA",
+        "authors": "Lu et al.",
+        "venue": "NeurIPS 2022",
+        "url": "https://arxiv.org/abs/2209.09513"
+      }
+    },
+    "sci-infograph": {
+      "name": "Sci Infograph",
+      "desc": "面向 STEM 教材教辅场景的信息图数据集，包含数学、物理、化学、生物、地学、工程等理科知识图示，适用于评估模型对科学图示、标注、流程、结构关系和图文信息的理解能力。",
+      "scale": "存量 60,000",
+      "tags": [
+        "科学图像理解",
+        "信息图解析",
+        "图文推理"
+      ],
+      "production": [
+        "人工采集"
+      ],
+      "modalities": [
+        "image"
+      ],
+      "inventory": "60,000",
+      "weeklyOutput": "2,000",
+      "brief": "覆盖教材插图、实验装置图、流程示意图等多种科学图示类型，重点考察图文联合理解与结构关系推理。",
+      "structure": "{\n  \"image\": \"photosynthesis_diagram.png\",\n  \"question\": \"图中标注③代表的结构是...\",\n  \"answer\": \"...\",\n  \"domain\": \"biology\"\n}",
+      "paper": {
+        "title": "AI2D",
+        "authors": "Kembhavi et al.",
+        "venue": "ECCV 2016",
+        "url": "https://arxiv.org/abs/1603.07396"
+      }
+    },
+    "microvqa": {
+      "name": "MicroVQA",
+      "desc": "显微镜视觉辅助科学发现的问答数据集，聚焦显微图像、微观细胞结构等任务，题目难度高，适用于提升模型在科学图像理解方面的能力。",
+      "scale": "存量 1,000",
+      "tags": [
+        "科学推理",
+        "图片推理"
+      ],
+      "production": [
+        "专家构建"
+      ],
+      "modalities": [
+        "image"
+      ],
+      "inventory": "1,000",
+      "weeklyOutput": "300",
+      "brief": "围绕显微图像的问答需要专业生物学背景与微观结构辨识能力，是科学图像理解方向的高难度评测数据。",
+      "structure": "{\n  \"image\": \"cell_microscopy.png\",\n  \"question\": \"图中箭头所指细胞器及其功能是...\",\n  \"answer\": \"...\",\n  \"magnification\": \"400x\"\n}",
+      "paper": {
+        "title": "MicroVQA",
+        "authors": "Burgon et al.",
+        "venue": "arXiv 2025",
+        "url": "https://arxiv.org/abs/2505.15624"
+      }
+    },
+    "msearth": {
+      "name": "MSEarth",
+      "desc": "地理学、地质学、地震学、海洋学等冷门地学学科的问答数据集，由专家构建，聚焦地学专业图片推理等任务，题目难度高，适用于提升模型在科学图像理解方面的能力。",
+      "scale": "存量 500",
+      "tags": [
+        "科学推理",
+        "图片推理"
+      ],
+      "production": [
+        "专家构建"
+      ],
+      "modalities": [
+        "image"
+      ],
+      "inventory": "500",
+      "weeklyOutput": "150",
+      "brief": "覆盖多个小众地学方向，题目围绕地质剖面、震相图、海图等专业图片设计，评估模型在长尾学科上的图像推理能力。",
+      "structure": "{\n  \"image\": \"seismic_profile.png\",\n  \"question\": \"该剖面反映的构造样式为...\",\n  \"answer\": \"...\",\n  \"field\": \"geology\"\n}",
+      "paper": {
+        "title": "MSEarth_MCQ",
+        "authors": "MSEarth Team",
+        "venue": "arXiv 2025",
+        "url": "https://arxiv.org/abs/2507.08122"
+      }
+    },
+    "proactive-video": {
+      "name": "流式视频主动回应数据集",
+      "desc": "考察模型是否有能力在流式视频输入中在合适的时间点进行回复。本数据集全部由专家构建（纯人工，模型不具备构建能力），多轮校对，时长覆盖15s-30min，场景多样任务多样。",
+      "scale": "存量 1,000",
+      "tags": [
+        "长视频推理",
+        "流式视频推理",
+        "视频推理",
+        "Agent"
+      ],
+      "production": [
+        "专家构建（纯人工）"
+      ],
+      "modalities": [
+        "video"
+      ],
+      "inventory": "1,000",
+      "weeklyOutput": "500",
+      "brief": "每个样本标注了流式输入中的最佳回应时机与内容，训练模型从被动应答走向主动交互，是 proactive 方向的前沿数据。",
+      "structure": "{\n  \"stream\": \"cooking_demo.mp4\",\n  \"respond_at\": \"00:02:31\",\n  \"response\": \"注意，下一步需要先关火再...\",\n  \"scenario\": \"tutorial\"\n}",
+      "paper": {
+        "title": "StreamingBench",
+        "authors": "Lin et al.",
+        "venue": "arXiv 2024",
+        "url": "https://arxiv.org/abs/2501.10829"
+      }
+    },
+    "multimodal-av": {
+      "name": "多模态（精校音视频对齐）数据集",
+      "desc": "主要由音乐类、影视类专业专家构建的专业化音视频描述、分析和对齐数据集。每段切片、描述与QA对构建均由专家在熵基自研的人在回路系统中进行，音频描述细粒度、专业化，视频描述全面。",
+      "scale": "存量 500",
+      "tags": [
+        "音频推理",
+        "视频推理",
+        "长视频推理"
+      ],
+      "production": [
+        "专家构建"
+      ],
+      "modalities": [
+        "video",
+        "audio"
+      ],
+      "inventory": "500",
+      "weeklyOutput": "200",
+      "brief": "音频侧标注细粒度乐器、情绪、曲式等专业信息，视频侧覆盖镜头、场景与叙事要素，QA 经多模型交叉验证，适用于音视频联合理解训练与评测。",
+      "structure": "{\n  \"clip\": \"orchestra_30s.mp4\",\n  \"audio_desc\": \"弦乐群渐强，定音鼓在 12s 进入...\",\n  \"video_desc\": \"指挥特写，镜头缓慢推近...\",\n  \"qa\": [{\"q\": \"...\", \"a\": \"...\"}]\n}",
+      "paper": {
+        "title": "MUSIC-AVQA",
+        "authors": "Li et al.",
+        "venue": "CVPR 2022",
+        "url": "https://arxiv.org/abs/2203.12196"
+      }
+    },
+    "camera-motion": {
+      "name": "运镜数据集",
+      "desc": "人工标注的逐帧运镜数据集。在熵基自研的标注系统中进行细粒度（6fps）标注，附带double-check，空间定位明确。",
+      "scale": "存量 200",
+      "tags": [
+        "视频推理",
+        "视频生成"
+      ],
+      "production": [
+        "人工构建"
+      ],
+      "modalities": [
+        "video"
+      ],
+      "inventory": "200",
+      "weeklyOutput": "1,000",
+      "brief": "逐帧（6fps）标注相机运动类型、方向与强度，为视频生成模型的运镜控制与视频理解模型的镜头语言解析提供高精度监督信号。",
+      "structure": "{\n  \"clip\": \"shot_042.mp4\",\n  \"fps\": 6,\n  \"frames\": [{\"t\": 0, \"motion\": \"dolly_in\", \"speed\": 0.7}, ...],\n  \"checked\": true\n}",
+      "paper": {
+        "title": "MovieShots",
+        "authors": "MovieShots Team",
+        "venue": "arXiv 2024",
+        "url": "https://arxiv.org/abs/2404.02095"
+      }
+    },
+    "crosslingual-multimodal": {
+      "name": "跨语言多模态多任务评测数据集",
+      "desc": "小语种学生与教师构建的覆盖多语言、多模态输入形式的综合评测数据集，任务类型多样，用于系统评估模型在跨语言场景下的多模态理解与泛化能力。",
+      "scale": "存量 6,000",
+      "tags": [
+        "多语言理解",
+        "图片推理"
+      ],
+      "production": [
+        "专家构建"
+      ],
+      "modalities": [
+        "text",
+        "image"
+      ],
+      "inventory": "6,000",
+      "weeklyOutput": "3,000",
+      "brief": "由小语种母语者直接构建而非翻译，任务覆盖选择、填空、开放式问答等多种形式，真实反映低资源语言场景下的模型能力。",
+      "structure": "{\n  \"lang\": \"sw\",\n  \"task\": \"open_qa\",\n  \"image\": \"market_scene.jpg\",\n  \"question\": \"...(swahili)...\",\n  \"answer\": \"...\"\n}",
+      "paper": {
+        "title": "M3Exam",
+        "authors": "Zhang et al.",
+        "venue": "NeurIPS 2023",
+        "url": "https://arxiv.org/abs/2306.05179"
+      }
+    },
+    "misleading-images": {
+      "name": "镜像与轮廓感知误导图片数据集",
+      "desc": "人工构建的镜像与轮廓识别数据集，特为大语言模型色盲、轮廓感知能力差、空间感知能力差而设计。",
+      "scale": "存量 500",
+      "tags": [
+        "图片推理"
+      ],
+      "production": [
+        "人工构建"
+      ],
+      "modalities": [
+        "image"
+      ],
+      "inventory": "500",
+      "weeklyOutput": "250",
+      "brief": "针对 MLLM 已知感知短板（镜像、轮廓、空间关系）系统性构造误导样本，用于定位并修复模型的低级视觉感知错误。",
+      "structure": "{\n  \"image\": \"mirror_ambiguous.png\",\n  \"trap\": \"mirror_reversal\",\n  \"question\": \"图中物体实际朝向左还是右？\",\n  \"answer\": \"左\"\n}",
+      "paper": {
+        "title": "IllusionVQA",
+        "authors": "IllusionVQA Team",
+        "venue": "arXiv 2024",
+        "url": "https://arxiv.org/abs/2403.15952"
+      }
+    },
+    "infograph": {
+      "name": "信息图InfoGraph",
+      "desc": "综合互联网爬取、专家构建、专家审核的信息图理解数据集，涵盖图表、流程图、统计图等多种信息图类型，考察模型对复杂视觉信息的解读与推理能力。",
+      "scale": "存量 4,000",
+      "tags": [
+        "图片生成"
+      ],
+      "production": [
+        "互联网提取",
+        "人工构建",
+        "生成"
+      ],
+      "modalities": [
+        "image"
+      ],
+      "inventory": "4,000",
+      "weeklyOutput": "3,000",
+      "brief": "三条数据通路（爬取 + 构建 + 审核）保证规模与质量，问题设计强调数值读取、趋势判断与跨图推理。",
+      "structure": "{\n  \"image\": \"quarterly_revenue_chart.png\",\n  \"question\": \"Q3 环比增长约为多少？\",\n  \"answer\": \"约 18%\",\n  \"chart_type\": \"bar\"\n}",
+      "paper": {
+        "title": "InfographicVQA",
+        "authors": "Mathew et al.",
+        "venue": "WACV 2022",
+        "url": "https://arxiv.org/abs/2104.12756"
+      }
+    },
+    "art": {
+      "name": "艺术品鉴赏数据集",
+      "desc": "专家构建的艺术品鉴赏数据集，包含西方画、雕塑、瓷器、陶器、素描、壁画、摄影、版画、纺织、装置艺术、书法等类别，每样艺术品附带高清多模态资料与1-3条专家鉴赏。",
+      "scale": "存量 2,000",
+      "tags": [
+        "图片推理",
+        "图片生成",
+        "创意写作"
+      ],
+      "production": [
+        "多渠道获取",
+        "专家构建"
+      ],
+      "modalities": [
+        "image",
+        "text"
+      ],
+      "inventory": "2,000",
+      "weeklyOutput": "300",
+      "brief": "鉴赏文字由艺术史专家撰写，涵盖风格源流、技法分析与审美判断，可训练模型的艺术理解与专业表达能力。",
+      "structure": "{\n  \"image\": \"porcelain_vase_hd.jpg\",\n  \"category\": \"瓷器\",\n  \"appreciations\": [\"釉面开片自然...\", \"...\"],\n  \"era\": \"宋\"\n}",
+      "paper": {
+        "title": "WikiArt",
+        "authors": "WikiArt",
+        "venue": "2016",
+        "url": "https://www.wikiart.org/"
+      }
+    },
+    "yukicoder-extension": {
+      "name": "Yukicoder Extension",
+      "desc": "面向 RL 代码训练的高难度竞技编程数据集，基于 yukicoder 题目扩展 testcase、submissions、checker/interactor，并经沙箱判题与 HITL 质检验证。",
+      "scale": "存量 3,000",
+      "tags": [
+        "代码推理",
+        "算法推理",
+        "竞技编程",
+        "交互式判题"
+      ],
+      "production": [
+        "采集",
+        "专家构建"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "inventory": "3,000",
+      "weeklyOutput": "500",
+      "brief": "每题扩充高质量测试用例与标准判题器，可直接接入 RL 训练管线，奖励信号稳定可靠，适合代码推理能力强化学习。",
+      "structure": "{\n  \"problem_id\": \"yuki_2941\",\n  \"statement\": \"...\",\n  \"testcases\": {\"count\": 1200, \"gen\": \"expert\"},\n  \"checker\": \"interactor.py\",\n  \"submissions\": [...]\n}",
+      "paper": {
+        "title": "Yukicoder",
+        "authors": "yukicoder",
+        "venue": "Online Judge",
+        "url": "https://yukicoder.me/"
+      }
+    },
+    "scicode": {
+      "name": "SciCode",
+      "desc": "科学计算代码生成与数值推理数据集，覆盖反应扩散、分子动力学、生态动力系统等科研计算任务；每题包含问题背景、函数接口、分步子任务、标准解、测试用例与验证报告。",
+      "scale": "存量 1,000",
+      "tags": [
+        "科学计算",
+        "代码生成"
+      ],
+      "production": [
+        "专家构建"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "inventory": "1,000",
+      "weeklyOutput": "200",
+      "brief": "题目源自真实科研场景，要求模型理解科学公式并给出可通过数值验证的代码实现，评估科学理解与工程实现的双重能力。",
+      "structure": "{\n  \"background\": \"反应扩散方程的数值求解...\",\n  \"interface\": \"def solve_rd(u0, t): ...\",\n  \"subtasks\": [...],\n  \"tests\": [...],\n  \"report\": \"validation.pdf\"\n}",
+      "paper": {
+        "title": "SciCode",
+        "authors": "Tian et al.",
+        "venue": "NeurIPS 2024",
+        "url": "https://arxiv.org/abs/2407.13168"
+      }
+    },
+    "oj-competition": {
+      "name": "OJ竞赛题拓展数据集",
+      "desc": "seed-2.0-pro pass@2 = 0 的优质竞赛题，经过专家构建并补充testcase，补充量级为每题1000余条testcase，全方位无死角地评估赛题难度，带更新后的submissions。",
+      "scale": "存量 4,000",
+      "tags": [
+        "代码能力"
+      ],
+      "production": [
+        "多渠道获取",
+        "专家构建"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "inventory": "4,000",
+      "weeklyOutput": "1,000",
+      "brief": "筛选当前最强模型两次采样均无法通过的竞赛题，每题配 1000+ 条测试用例与更新 submissions，构成代码能力评估的硬核天花板。",
+      "structure": "{\n  \"problem_id\": \"oj_ext_0173\",\n  \"pass@2(seed-2.0-pro)\": 0,\n  \"testcases\": 1000,\n  \"submissions\": [...]\n}",
+      "paper": {
+        "title": "CodeContests",
+        "authors": "Li et al.",
+        "venue": "Science 2022",
+        "url": "https://arxiv.org/abs/2203.07814"
+      }
+    },
+    "openclaw": {
+      "name": "OpenClaw轨迹数据",
+      "desc": "记录 OpenClaw 在结构化任务中的操作轨迹，包含完整的 workspace, sessions 等，用于训练和评估模型的规划、执行与纠错能力，适用于Agent能力建设。",
+      "scale": "存量 30,000",
+      "tags": [
+        "工具调用",
+        "Agent"
+      ],
+      "production": [
+        "多渠道获取",
+        "人工构建"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "inventory": "30,000",
+      "weeklyOutput": "3,000",
+      "brief": "轨迹完整保留任务上下文、工具调用序列与中间状态，支持行为克隆与过程奖励建模等多种 Agent 训练范式。",
+      "structure": "{\n  \"task\": \"整理下载目录并生成报告\",\n  \"workspace\": {...},\n  \"sessions\": [{\"tool\": \"shell\", \"args\": [...], \"obs\": \"...\"}],\n  \"outcome\": \"success\"\n}",
+      "paper": {
+        "title": "OpenClaw Trajectories Demo",
+        "authors": "OpenClaw",
+        "venue": "2025",
+        "url": "https://github.com/Entropyorder"
+      }
+    },
+    "agentos-trajectory": {
+      "name": "AgentOS Trajectory",
+      "desc": "面向 AgentOS 场景的多轮、长程工具调用轨迹数据集，包含 call-level 原始请求响应、代码会话事件流与结构化任务轨迹，可用于训练和评估模型的规划、工具调用、执行纠错和复杂任务交付能力。",
+      "scale": "存量 30,000",
+      "tags": [
+        "Agent规划",
+        "工具调用",
+        "多轮执行",
+        "轨迹学习"
+      ],
+      "production": [
+        "用户交互轨迹采集",
+        "自动化质量检查"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "inventory": "30,000",
+      "weeklyOutput": "3,000",
+      "brief": "call-level 粒度记录真实用户与 AgentOS 的完整交互，长程任务覆盖多工具协同与中途纠错，是训练交付型 Agent 的核心数据。",
+      "structure": "{\n  \"goal\": \"部署服务并修复启动失败\",\n  \"events\": [{\"type\": \"llm_call\", ...}, {\"type\": \"exec\", ...}],\n  \"turns\": 47,\n  \"delivered\": true\n}",
+      "paper": {
+        "title": "GAIA",
+        "authors": "Mialon et al.",
+        "venue": "arXiv 2023",
+        "url": "https://arxiv.org/abs/2311.12983"
+      }
+    },
+    "gdpval-extension": {
+      "name": "GDPval Extension",
+      "desc": "面向真实业务场景的 Agent 工具调用轨迹数据集，覆盖金融合规、人力资源、云计算、零售经营、税务会计等任务，包含 query、附件、专家产物、Rubric、多模型轨迹与交付物。",
+      "scale": "存量 2,000",
+      "tags": [
+        "Agent规划",
+        "工具调用",
+        "多文件理解"
+      ],
+      "production": [
+        "专家构建",
+        "自动验证"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "inventory": "2,000",
+      "weeklyOutput": "800",
+      "brief": "以真实行业交付物为金标准，多模型轨迹对比揭示能力差距，Rubric 化评估可直接用于 Agent 业务落地能力的基准测试。",
+      "structure": "{\n  \"query\": \"为该零售企业生成月度经营分析\",\n  \"attachments\": [...],\n  \"expert_deliverable\": \"report.docx\",\n  \"rubric\": {...},\n  \"model_traces\": [...]\n}",
+      "paper": {
+        "title": "GDPval",
+        "authors": "OpenAI",
+        "venue": "2025",
+        "url": "https://openai.com/index/gdpval/"
+      }
+    },
+    "skillbench": {
+      "name": "SkillBench",
+      "desc": "面向 Agent 技能评测与训练的端到端任务数据集，覆盖金融、法律、安全、审计等真实业务场景，包含任务说明、环境、数据、测试、标准解与执行轨迹。",
+      "scale": "存量 30,000",
+      "tags": [
+        "Agent规划",
+        "工具调用",
+        "代码执行"
+      ],
+      "production": [
+        "专家构建",
+        "自动验证"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "inventory": "30,000",
+      "weeklyOutput": "3,000",
+      "brief": "每个任务打包完整执行环境与可运行测试，标准解与专家轨迹双重参考，既可做技能评测基准也可做 Agent SFT/RL 训练集。",
+      "structure": "{\n  \"skill\": \"合同关键条款抽取\",\n  \"env\": \"docker://skillbench/legal\",\n  \"data\": [...],\n  \"tests\": [...],\n  \"solution\": \"...\",\n  \"trace\": [...]\n}",
+      "paper": {
+        "title": "skillsbench",
+        "authors": "SkillBench Team",
+        "venue": "2025",
+        "url": "https://github.com/Entropyorder"
+      }
+    },
+    "search-retrieval": {
+      "name": "信息检索数据",
+      "desc": "长链信息推理和检索数据，构建有两种形式，一种是专家采集自多跳（大于5跳）的互联网角落，另一种则由专家蒸馏真实用户的模糊检索需求，保证数据的多样性。",
+      "scale": "存量 2,000",
+      "tags": [
+        "信息检索",
+        "工具调用",
+        "Agent"
+      ],
+      "production": [
+        "多渠道获取",
+        "专家构建"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "inventory": "2,000",
+      "weeklyOutput": "800",
+      "brief": "多跳检索链路与真实模糊需求双通道构建，经受提示的 LLM 与人工双重校验，训练模型在开放网络环境中的深度检索与证据整合能力。",
+      "structure": "{\n  \"question\": \"...需要5跳以上检索的问题...\",\n  \"hops\": 6,\n  \"evidence_chain\": [...],\n  \"answer\": \"...\",\n  \"source\": \"expert_curated\"\n}",
+      "paper": {
+        "title": "FRAMES",
+        "authors": "Krishna et al.",
+        "venue": "arXiv 2024",
+        "url": "https://arxiv.org/abs/2409.12941"
+      }
+    },
+    "open-challenge": {
+      "name": "开放式现实信息检索难题",
+      "desc": "面向复杂现实场景下的推理、检索、评价数据集。精心设计单轮/多轮现实场景真实用户遇到的需要行业「专家级」知识的检索类问题。",
+      "scale": "存量 1,000",
+      "tags": [
+        "信息检索"
+      ],
+      "production": [
+        "专家构建"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "inventory": "1,000",
+      "weeklyOutput": "500",
+      "brief": "问题来自真实用户遇到的专家级检索难题，覆盖单轮与多轮形式，评估模型在复杂现实约束下的检索、推理与答案评价全链路能力。",
+      "structure": "{\n  \"scenario\": \"真实业务咨询场景\",\n  \"turns\": [{\"q\": \"...\", \"evidence\": [...], \"a\": \"...\"}],\n  \"expertise\": \"legal\"\n}",
+      "paper": {
+        "title": "BrowseComp",
+        "authors": "OpenAI",
+        "venue": "2025",
+        "url": "https://openai.com/index/browsecomp/"
+      }
+    }
+  }
+}

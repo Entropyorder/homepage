@@ -1,0 +1,83 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+dist-ssr/
+*.local
+
+# Worktrees & local runtime state
+.worktrees/
+dev.log
+*.log
+
+# Editor / tooling
+.vscode/
+.idea/
+.DS_Store
+*.swp
+*.swo
+.cate/
+
+# Project-local stuff (not for repo)
+issues.md
+temp/
+.claude/
+docs/
+products.xlsx
+
+# Env files
+.env
+.env.local
+.env.*.local
+
+# Coverage / test artifacts
+coverage/
+
+# Local datasets, generated artifacts and runtime state
+
+.env.*
+!.env.example
+!.env.sample
+!.env.template
+**/config.env
+**/client.env
+**/cookies.txt
+**/credentials/
+**/apikey.sh
+**/deepseek-official.sh
+**/__pycache__/
+*.pyc
+*.pid
+.venv*/
+*.jsonl
+*.csv
+*.tsv
+*.xlsx
+*.xls
+*.db
+*.sqlite
+*.sqlite3
+*.h5
+*.hdf5
+*.npy
+*.npz
+*.pt
+*.pth
+*.safetensors
+*.pkl
+*.pickle
+*.parquet
+*.arrow
+*.dta
+*.zip
+*.tar
+*.gz
+*.zst
+*.mp4
+*.mp3
+*.wav
+/logo.png
+
+# Local datasets, generated artifacts and runtime state
+

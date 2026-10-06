@@ -1,0 +1,302 @@
+/* ============================================================
+   ENTROPY·ORDER — 设计系统 token（暗 / 亮 双主题）
+   单色 editorial 风格 · 少量状态点缀色
+   ------------------------------------------------------------
+   主题切换：html[data-theme='dark' | 'light']（默认 dark）
+   --eo-w = overlay 基色的 RGB 三通道（暗=白 / 亮=黑），
+   供 tailwind `rgb(var(--eo-w) / <alpha>)` 使用；
+   --line 等直接是完整颜色值，供 var(--line) 使用。
+   ============================================================ */
+
+/* ── 深色（默认，:root 即深色，无闪烁） ──────────────────── */
+:root,
+:root[data-theme='dark'] {
+  /* 单色系 surface / ink */
+  --bg: #08080a;
+  --bg-2: #0e0e11;
+  --bg-3: #141418;
+
+  --ink: #f4f4f6;
+  --ink-2: #dcdce0;
+  --dim: #9a9aa4;
+  --mute: #5e5e68;
+
+  /* overlay 基色通道（暗主题=白） */
+  --eo-w: 255 255 255;
+  /* 实底阴影/遮罩通道（暗主题=黑） */
+  --eo-b: 0 0 0;
+
+  --line: rgba(255, 255, 255, 0.1);
+  --line-2: rgba(255, 255, 255, 0.2);
+  --line-3: rgba(255, 255, 255, 0.32);
+
+  /* 导航 / 玻璃底色 */
+  --nav-bg: 8 8 10;         /* 导航 rgba(rgb, alpha) */
+  --nav-alpha-top: 0.28;
+  --nav-alpha-scrolled: 0.42;
+
+  /* 状态点缀色（仅用于状态标识，不用于装饰） */
+  --good: #34d399;
+  --warn: #f5a623;
+  --bad: #ff5c5c;
+
+  /* 字体（英文 variable 自托管；中文回退系统字栈） */
+  --sans: 'Inter Variable', 'Inter', 'PingFang SC', 'Hiragino Sans GB',
+    'Microsoft YaHei', 'Noto Sans CJK SC', -apple-system, BlinkMacSystemFont,
+    system-ui, sans-serif;
+  --mono: 'JetBrains Mono Variable', 'JetBrains Mono', ui-monospace, 'SF Mono', monospace;
+  --display: 'Space Grotesk Variable', 'Space Grotesk', 'PingFang SC',
+    'Microsoft YaHei', 'Noto Sans CJK SC', 'Inter Variable', system-ui, sans-serif;
+
+  /* 动效 */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --dur-fast: 0.3s;
+  --dur-normal: 0.6s;
+  --dur-slow: 0.9s;
+
+  /* 微光 / 装饰（canvas & css 共用读值） */
+  --grid-line: rgba(255, 255, 255, 0.055);
+  --glow-top: rgba(255, 255, 255, 0.04);
+  --marker: rgba(255, 255, 255, 0.18);   /* eo-em 高亮块 */
+  --shimmer: rgba(255, 255, 255, 0.35);
+  --logo-filter: none;                    /* logo 处理（浅色用） */
+  color-scheme: dark;
+}
+
+/* ── 浅色（纸面 editorial：暖白纸底 + 墨色文字） ─────────── */
+:root[data-theme='light'] {
+  --bg: #f7f6f3;
+  --bg-2: #efeeea;
+  --bg-3: #e6e4de;
+
+  --ink: #17171a;
+  --ink-2: #2b2b30;
+  --dim: #565660;
+  --mute: #8b8b95;
+
+  /* overlay 基色通道（亮主题=黑，发丝线/磨砂自动变深） */
+  --eo-w: 23 23 26;
+  --eo-b: 255 255 255;
+
+  --line: rgba(23, 23, 26, 0.12);
+  --line-2: rgba(23, 23, 26, 0.22);
+  --line-3: rgba(23, 23, 26, 0.34);
+
+  --nav-bg: 247 246 243;
+  --nav-alpha-top: 0.62;
+  --nav-alpha-scrolled: 0.78;
+
+  --good: #0d9668;
+  --warn: #b97a0e;
+  --bad: #d33f3f;
+
+  --grid-line: rgba(23, 23, 26, 0.06);
+  --glow-top: rgba(23, 23, 26, 0.035);
+  --marker: rgba(23, 23, 26, 0.14);
+  --shimmer: rgba(23, 23, 26, 0.22);
+  --logo-filter: brightness(0);           /* 纯白 logo → 纯黑（不改色相） */
+  color-scheme: light;
+}
+
+/* ── Demo 风格通用元素 ──────────────────────────────────── */
+
+/* eyebrow — mono 大写小标签 */
+.eo-eyebrow {
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--dim);
+}
+
+/* marker 高亮 — 文字下半压一条半透明色块 */
+.eo-em {
+  display: inline;
+  color: var(--ink);
+  background: linear-gradient(
+    to top,
+    var(--marker),
+    var(--marker) 38%,
+    transparent 38%
+  );
+  border-radius: 3px;
+  padding: 0 0.08em;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+
+/* vignette — 顶部径向微光 */
+.eo-vignette {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background: radial-gradient(
+    ellipse 70% 45% at 50% 0%,
+    var(--glow-top),
+    transparent 65%
+  );
+}
+
+/* demo 风格卡片 */
+.eo-card {
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: rgb(var(--eo-w) / 0.015);
+  transition:
+    transform 0.4s cubic-bezier(0.2, 0.7, 0.2, 1),
+    border-color 0.4s,
+    background 0.4s;
+  position: relative;
+  overflow: hidden;
+}
+.eo-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--line-2);
+  background: rgb(var(--eo-w) / 0.03);
+}
+
+/* demo 风格 fade-up 滚动进入 */
+.eo-fade-up {
+  opacity: 0;
+  transform: translateY(18px);
+  transition:
+    opacity 0.6s var(--ease-out),
+    transform 0.6s var(--ease-out);
+}
+.eo-fade-up.in {
+  opacity: 1;
+  transform: none;
+}
+
+/* ── 持续动效（迁移自 demo.css） ────────────────────────── */
+
+/* 扫光 — 柱状条/参数条 */
+@keyframes eo-shimmer {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(260%);
+  }
+}
+.eo-shimmer-bar {
+  position: relative;
+  overflow: hidden;
+}
+.eo-shimmer-bar::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    var(--shimmer),
+    transparent
+  );
+  transform: translateX(-100%);
+  animation: eo-shimmer 2.2s linear infinite;
+}
+
+/* 呼吸光环 */
+@keyframes eo-breathe {
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 rgb(var(--eo-w) / 0);
+  }
+  50% {
+    box-shadow: 0 0 14px 3px rgb(var(--eo-w) / 0.25);
+  }
+}
+.eo-breathe {
+  animation: eo-breathe 2.2s ease-in-out infinite;
+}
+
+/* 脉冲点 */
+@keyframes eo-pulse {
+  0%,
+  100% {
+    opacity: 0.5;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.5);
+  }
+}
+.eo-pulse-dot {
+  animation: eo-pulse 1.8s ease-in-out infinite;
+}
+
+/* 渐变扫光（双向） */
+@keyframes eo-flow {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+.eo-flow-gradient {
+  background-size: 200% 100%;
+  animation: eo-flow 2.4s linear infinite;
+}
+
+/* 闪烁 */
+@keyframes eo-blink {
+  0%,
+  100% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+.eo-blink {
+  animation: eo-blink 2s ease-in-out infinite;
+}
+
+/* 漂浮 */
+@keyframes eo-float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+}
+.eo-float {
+  animation: eo-float 6s ease-in-out infinite;
+}
+
+/* 旋转环 */
+@keyframes eo-ring-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.eo-ring-spin {
+  animation: eo-ring-spin 18s linear infinite;
+}
+
+/* 减少动效偏好 */
+@media (prefers-reduced-motion: reduce) {
+  .eo-shimmer-bar::after,
+  .eo-breathe,
+  .eo-pulse-dot,
+  .eo-flow-gradient,
+  .eo-blink,
+  .eo-float,
+  .eo-ring-spin {
+    animation: none !important;
+  }
+  .eo-fade-up {
+    transition: none;
+    opacity: 1;
+    transform: none;
+  }
+}

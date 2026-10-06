@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="zh" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="%BASE_URL%logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="熵基秩序 EntropyOrder — 构建高质量数据，驱动智能未来" />
+    <meta name="theme-color" content="#08080a" />
+    <title>熵基秩序 · EntropyOrder</title>
+    <style>
+      /* 首屏防闪烁：JS 加载前先铺深色底 */
+      html, body { background: #08080a; color: #f4f4f6; }
+      html[data-theme='light'], html[data-theme='light'] body { background: #f7f6f3; color: #17171a; }
+    </style>
+    <script>
+      // 主题防闪烁：CSS 加载前写入 data-theme
+      (function () {
+        try {
+          var t = localStorage.getItem('eo-theme');
+          if (t !== 'light' && t !== 'dark') t = 'dark';
+          document.documentElement.dataset.theme = t;
+          document.documentElement.classList.toggle('dark', t === 'dark');
+        } catch (e) { document.documentElement.dataset.theme = 'dark'; }
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

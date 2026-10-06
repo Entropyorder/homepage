@@ -1,0 +1,895 @@
+{
+  "nav": {
+    "home": "Home",
+    "products": "Products",
+    "blog": "Blog"
+  },
+  "hero": {
+    "slogan": "熵基秩序 · EntropyOrder",
+    "subtitle": "Building High-Quality Data to Power the Future of Intelligence",
+    "scrollHint": "See Our Expert Data Construction Pipeline"
+  },
+  "products": {
+    "pageTitle": "Products & Services",
+    "pageSubtitle": "We provide {{count}} high-quality dataset products",
+    "totalCount": "Total products",
+    "title": "Products & Services",
+    "categories": {
+      "expert": {
+        "name": "Scientific Reasoning"
+      },
+      "multimodal": {
+        "name": "Multimodal"
+      },
+      "code": {
+        "name": "Code Capability"
+      },
+      "agent": {
+        "name": "Retrieval & Agent"
+      }
+    },
+    "card": {
+      "scale": "Scale",
+      "contact": "Contact for Sample",
+      "viewDetail": "View Details"
+    },
+    "modal": {
+      "title": "Request Dataset Sample",
+      "name": "Name",
+      "org": "Organization",
+      "email": "Email",
+      "purpose": "Purpose",
+      "submit": "Submit",
+      "cancel": "Cancel"
+    },
+    "detail": {
+      "overview": "Overview",
+      "dataStructure": "Data Structure",
+      "relatedPaper": "Related Paper",
+      "close": "Close",
+      "contactSample": "Request Sample",
+      "sampleDownload": "Sample Download",
+      "samplePasswordPlaceholder": "Enter access code",
+      "samplePasswordHint": "The access code is provided by our business team. Once unlocked, all samples stay downloadable for this session.",
+      "unlock": "Unlock",
+      "downloadNow": "Download",
+      "wrongPassword": "Incorrect code, please try again",
+      "lockedHint": "Too many attempts. Try again in {{seconds}}s"
+    },
+    "filter": {
+      "searchPlaceholder": "Search by name or description...",
+      "capabilities": "Capabilities",
+      "production": "Production Methods",
+      "modalities": "Modalities",
+      "matchCount": "{{count}} product(s) matched",
+      "clearAll": "Clear filters",
+      "activeFilters": "Active filters",
+      "empty": "No matching datasets found",
+      "modalitiesText": "Text",
+      "modalitiesImage": "Image",
+      "modalitiesVideo": "Video",
+      "modalitiesAudio": "Audio"
+    }
+  },
+  "expertData": {
+    "tag": "Why Expert Data",
+    "title": "Expert Knowledge Is the Foundation of Capability Breakthroughs",
+    "subtitle": "High-quality expert annotations outperform crowd-sourced data in training efficiency, reasoning depth, and domain precision",
+    "methodologyImages": [
+      {
+        "title": "Expert Precision Annotation"
+      },
+      {
+        "title": "Knowledge Graph Construction"
+      },
+      {
+        "title": "Multi-expert Cross-review"
+      }
+    ],
+    "stats": [
+      {
+        "value": "50+",
+        "label": "Domain Experts"
+      },
+      {
+        "value": "4",
+        "label": "Datasets"
+      },
+      {
+        "value": "95%",
+        "label": "Pass Rate"
+      },
+      {
+        "value": "3×",
+        "label": "Efficiency Gain"
+      }
+    ],
+    "comparison": {
+      "expertTitle": "Expert Annotation",
+      "expertPoints": [
+        "Complete reasoning chains",
+        "Multi-expert cross-validation",
+        "Deep domain understanding",
+        "High-difficulty discriminative questions"
+      ],
+      "crowdTitle": "Crowd Annotation",
+      "crowdPoints": [
+        "Broken reasoning chains",
+        "Single annotation, no validation",
+        "Surface-level understanding",
+        "Low difficulty, easily cracked"
+      ]
+    },
+    "pipeline": {
+      "heading": "Human-AI Collaborative Annotation Pipeline",
+      "passLabel": "Pass",
+      "passDesc": "Enters the dataset",
+      "rejectLabel": "Reject",
+      "rejectDesc": "Discarded if difficulty threshold not met",
+      "papersLabel": "Related Publications",
+      "papers": [
+        {
+          "title": "AutoQG: An Automated Framework for Question Generation from Scientific Papers",
+          "authors": "AutoQG Team",
+          "venue": "ICLR 2025",
+          "url": "https://openreview.net/forum?id=AutoQG",
+          "img": "papers/autoQG.png"
+        },
+        {
+          "title": "GPQA: A Graduate-Level Google-Proof Q&A Benchmark",
+          "authors": "Rein et al.",
+          "venue": "arXiv 2023",
+          "url": "https://arxiv.org/abs/2311.12022",
+          "img": "papers/gpqa.png"
+        },
+        {
+          "title": "MMLU-Pro: A More Robust and Challenging MultiTask Language Understanding Benchmark",
+          "authors": "Wang et al.",
+          "venue": "arXiv 2024",
+          "url": "https://arxiv.org/abs/2406.08064",
+          "img": "papers/mmlu_pro.png"
+        },
+        {
+          "title": "SCBench: A KV Cache-Centric Benchmark for Long Context",
+          "authors": "Li et al.",
+          "venue": "arXiv 2025",
+          "url": "https://arxiv.org/abs/2412.12119",
+          "img": "papers/scbench.png"
+        }
+      ],
+      "detailedSteps": [
+        {
+          "title": "Paper Preprocessing & Structured Parsing",
+          "desc": "Frontier LLM performs section-aware paper decomposition, splitting abstract, methods, experiments, and conclusions, outputting structured summaries, core concept lists, and key entity-relation candidate sets",
+          "type": "ai",
+          "badge": "AI"
+        },
+        {
+          "title": "Domain Expert Deep Reading & Understanding",
+          "desc": "Matching perfectly aligned domain experts (PhD-level+) from expert pool, focusing on methodological details, implicit assumptions, academic lineage, and knowledge boundaries in the paper",
+          "type": "human",
+          "badge": "Expert"
+        },
+        {
+          "title": "Collaborative Knowledge Graph Construction",
+          "desc": "AI extracts entity-relation-entity triples using ontology-guided + section-aware prompting from AutoQG paper. Human experts review, supplement omissions, and distinguish explicit vs implicit association graphs requiring domain knowledge",
+          "type": "hybrid",
+          "badge": "AI + Expert"
+        },
+        {
+          "title": "High-Discriminative Question Design via Reasoning Chains",
+          "desc": "Based on multi-hop reasoning paths in knowledge graphs combined with expert domain knowledge, design high-discriminative questions with complex reasoning chains near disciplinary boundaries",
+          "type": "human",
+          "badge": "Expert"
+        },
+        {
+          "title": "AI Difficulty Calibration & Consistency Verification",
+          "desc": "Frontier models cross-verify question difficulty: send questions all models can answer back for revision, send questions all models get wrong for human verification of answer correctness",
+          "type": "ai",
+          "badge": "AI"
+        },
+        {
+          "title": "Multi-expert Cross-Blind Review",
+          "desc": "Double-blind review protocol: each question scored by at least three independent experts across relevance, answerability, distractor quality, fluency, reasoning depth, evidence traceability, with automatic reliability testing",
+          "type": "human",
+          "badge": "Expert"
+        },
+        {
+          "title": "Final Decision & Data Ingestion",
+          "desc": "Based on disciplinary balance, difficulty gradient, question type, and other concerns, senior experts make final decision on ingestion",
+          "type": "human",
+          "badge": "Expert"
+        }
+      ],
+      "quote": "Ten million mediocre conversations can't compare with a thousand corner cases polished by top experts"
+    }
+  },
+  "ai4ss": {
+    "tag": "Core Vision",
+    "title": "AI4SS4AI",
+    "subtitle": "Understand human diversity through Social Science. Let AI genuinely give back to the Real World.",
+    "fromReal": "FROM REAL",
+    "toReal": "TO REAL",
+    "loopDesc": "Starting from the real world, empowered by the mutual reinforcement of Social Science and AI, and ultimately returning to improve the real world",
+    "personaCallout": {
+      "stat": "1,000,000+",
+      "label": "Persona × Skills Combinations",
+      "desc": "A million-scale multi-dimensional personality and skills taxonomy spanning value systems, cognitive styles, professional competencies, and cultural backgrounds — the foundation of unprecedented data diversity"
+    },
+    "steps": [
+      {
+        "title": "Real-World Observation",
+        "desc": "Collect first-hand data from real social behaviors, cultural differences, and human interactions — preserving the full complexity of human nature"
+      },
+      {
+        "title": "Social Science Extraction",
+        "desc": "Distill personality traits and behavioral patterns using established frameworks from psychology and sociology, giving data scientific interpretability"
+      },
+      {
+        "title": "Personality Diversity Modeling",
+        "desc": "Build a personality atlas spanning diverse value systems, cognitive styles, and cultural backgrounds — enabling unprecedented data diversity"
+      },
+      {
+        "title": "High-Quality Data Generation",
+        "desc": "Driven by the personality atlas, generate large-scale training data that is simultaneously diverse, authentic, and internally consistent"
+      },
+      {
+        "title": "AGI Empowers Reality",
+        "desc": "AI that truly understands human diversity — making wiser, more empathetic decisions in education, healthcare, and governance"
+      }
+    ]
+  },
+  "blog": {
+    "tag": "Blog",
+    "title": "Latest Updates",
+    "subtitle": "Explore cutting-edge insights and technical practices in data intelligence"
+  },
+  "footer": {
+    "aboutTitle": "About Us",
+    "contactTitle": "Contact Us",
+    "email": "jscott2402@gmail.com",
+    "address": "B7, 5F, Block D, Tongfang Technology Building, Haidian District, Beijing",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "subject": "Subject",
+      "message": "Message",
+      "submit": "Send Message",
+      "success": "Message sent! We'll get back to you soon.",
+      "error": "Failed to send. Please try again later."
+    },
+    "copyright": "© 2025 熵基秩序 EntropyOrder. All rights reserved.",
+    "backToTop": "Back to Top"
+  },
+  "datasets": {
+    "hle": {
+      "name": "HLE",
+      "desc": "High-level multimodal expert reasoning dataset built by a Tsinghua University expert team of ~100 active masters/PhD students through a human-in-the-loop system, with high-quality reasoning chains and MAS multi-layer quality verification.",
+      "scale": "Inventory 2,000",
+      "tags": [
+        "Scientific Reasoning",
+        "Image Reasoning"
+      ],
+      "production": [
+        "Expert-built (HITL)"
+      ],
+      "modalities": [
+        "text",
+        "image"
+      ],
+      "inventory": "2,000",
+      "weeklyOutput": "400",
+      "brief": "HLE (Hard-Level Evaluation) is a high-difficulty scientific reasoning benchmark for frontier LLMs. Questions are designed and reviewed by domain experts across 12+ disciplines, requiring deep reasoning rather than surface matching. Each question includes complete reasoning chain annotations and difficulty ratings.",
+      "structure": "{\n  \"query\": \"Under standard conditions, which reaction has the most negative ΔG°?\",\n  \"rubric\": \"Correct option plus thermodynamic derivation required\",\n  \"answer\": \"Option C, reasoning chain: ...\",\n  \"domain\": \"chemistry\",\n  \"difficulty\": 4\n}",
+      "paper": {
+        "title": "Humanity's Last Exam (HLE)",
+        "authors": "Phan et al.",
+        "venue": "arXiv 2025",
+        "url": "https://arxiv.org/abs/2501.14249"
+      }
+    },
+    "math-hard": {
+      "name": "Hard Math Problems",
+      "desc": "Text-based dataset for hard mathematical reasoning covering analysis, algebra, number theory and geometry, with problem statements, full solutions and answers — for training and evaluating multi-step proof, symbolic reasoning and answer generation.",
+      "scale": "Inventory 3,000",
+      "tags": [
+        "Math Reasoning",
+        "Symbolic Reasoning",
+        "Solution Generation"
+      ],
+      "production": [
+        "Expert-built",
+        "Quality-reviewed"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "inventory": "3,000",
+      "weeklyOutput": "1,000",
+      "brief": "Each problem is written by mathematics experts with a complete solution process, emphasizing multi-step proof and symbolic manipulation. Suitable as training data and as a high-discrimination evaluation set for mathematical reasoning.",
+      "structure": "{\n  \"problem\": \"Prove: for every positive integer n, ...\",\n  \"field\": \"number_theory\",\n  \"solution\": \"By induction on the base case...\",\n  \"answer\": \"...\",\n  \"difficulty\": 5\n}",
+      "paper": {
+        "title": "MATH Dataset",
+        "authors": "Hendrycks et al.",
+        "venue": "NeurIPS 2021",
+        "url": "https://arxiv.org/abs/2103.03874"
+      }
+    },
+    "sfe": {
+      "name": "SFE",
+      "desc": "SFE benchmark for evaluating MLLM scientific cognition from perception to reasoning. Data created by professors (associate level and above) and senior grad students from Tsinghua and other top-985 universities based on their research experience, covering 5 disciplines (astronomy, chemistry, earth science, life science, materials science).",
+      "scale": "Inventory 3,000",
+      "tags": [
+        "Scientific Reasoning",
+        "Image Reasoning"
+      ],
+      "production": [
+        "Expert-built"
+      ],
+      "modalities": [
+        "text",
+        "image"
+      ],
+      "inventory": "3,000",
+      "weeklyOutput": "1,000",
+      "brief": "SFE benchmark for evaluating MLLM scientific cognition from perception to reasoning. Data created by professors (associate level and above) and senior grad students from Tsinghua and other top-985 universities based on their research experience, covering 5 disciplines (astronomy, chemistry, earth science, life science, materials science).",
+      "structure": "{\n  \"question\": \"Identify the sample phase from the XRD pattern...\",\n  \"image\": \"xrd_pattern.png\",\n  \"answer\": \"...\",\n  \"discipline\": \"materials\",\n  \"level\": \"expert\"\n}",
+      "paper": {
+        "title": "Scientists' First Exam (SFE)",
+        "authors": "Zhou et al.",
+        "venue": "arXiv 2025",
+        "url": "https://arxiv.org/abs/2506.10565"
+      }
+    },
+    "stem-video": {
+      "name": "STEM Video Reasoning",
+      "desc": "Expert-built STEM video understanding dataset evaluating deep reasoning and knowledge association over science/engineering teaching and experiment videos.",
+      "scale": "Inventory 1,000",
+      "tags": [
+        "Scientific Reasoning",
+        "Video Reasoning",
+        "Long-video Reasoning"
+      ],
+      "production": [
+        "Expert-built"
+      ],
+      "modalities": [
+        "video"
+      ],
+      "inventory": "1,000",
+      "weeklyOutput": "500",
+      "brief": "Videos come from real STEM teaching and lab scenarios. Questions emphasize reasoning over dynamic processes, experimental phenomena and disciplinary knowledge rather than simple content description.",
+      "structure": "{\n  \"video\": \"circuit_lab.mp4\",\n  \"question\": \"The oscilloscope waveform change indicates...\",\n  \"answer\": \"...\",\n  \"subject\": \"physics\"\n}",
+      "paper": {
+        "title": "Video-MME",
+        "authors": "Fu et al.",
+        "venue": "arXiv 2024",
+        "url": "https://arxiv.org/abs/2405.21075"
+      }
+    },
+    "crosslingual-k12-stem": {
+      "name": "Cross-lingual K12 & University STEM",
+      "desc": "Multi-lingual STEM dataset for K12 and university levels, covering math, physics, chemistry and biology — improving subject reasoning in multilingual education scenarios.",
+      "scale": "Inventory 60,000",
+      "tags": [
+        "Scientific Reasoning",
+        "Image Reasoning",
+        "Multilingual"
+      ],
+      "production": [
+        "Collected",
+        "Expert-built"
+      ],
+      "modalities": [
+        "text",
+        "image"
+      ],
+      "inventory": "60,000",
+      "weeklyOutput": "2,000",
+      "brief": "Questions collected from official textbooks and exercise books across countries, verified in multiple rounds by native-speaking education experts to preserve original logic and cultural context. Covers 20+ languages.",
+      "structure": "{\n  \"question\": \"...(original language)...\",\n  \"subject\": \"physics\",\n  \"lang\": \"de\",\n  \"level\": \"k12\",\n  \"answer\": \"B\"\n}",
+      "paper": {
+        "title": "ScienceQA",
+        "authors": "Lu et al.",
+        "venue": "NeurIPS 2022",
+        "url": "https://arxiv.org/abs/2209.09513"
+      }
+    },
+    "sci-infograph": {
+      "name": "Sci Infograph",
+      "desc": "Infographic dataset for STEM textbook scenarios — math, physics, chemistry, biology, geoscience and engineering diagrams — evaluating comprehension of scientific figures, annotations, processes, structural relations and text-image information.",
+      "scale": "Inventory 60,000",
+      "tags": [
+        "Scientific Image Understanding",
+        "Infographic Parsing",
+        "Text-image Reasoning"
+      ],
+      "production": [
+        "Human-collected"
+      ],
+      "modalities": [
+        "image"
+      ],
+      "inventory": "60,000",
+      "weeklyOutput": "2,000",
+      "brief": "Covers textbook illustrations, lab apparatus diagrams, process schematics and more, focusing on joint text-image understanding and structural relation reasoning.",
+      "structure": "{\n  \"image\": \"photosynthesis_diagram.png\",\n  \"question\": \"The structure labeled ③ in the figure is...\",\n  \"answer\": \"...\",\n  \"domain\": \"biology\"\n}",
+      "paper": {
+        "title": "AI2D",
+        "authors": "Kembhavi et al.",
+        "venue": "ECCV 2016",
+        "url": "https://arxiv.org/abs/1603.07396"
+      }
+    },
+    "microvqa": {
+      "name": "MicroVQA",
+      "desc": "Microscopy VQA dataset aiding scientific discovery — focusing on microscopic images and cellular structures with high difficulty — improving models' scientific image understanding.",
+      "scale": "Inventory 1,000",
+      "tags": [
+        "Scientific Reasoning",
+        "Image Reasoning"
+      ],
+      "production": [
+        "Expert-built"
+      ],
+      "modalities": [
+        "image"
+      ],
+      "inventory": "1,000",
+      "weeklyOutput": "300",
+      "brief": "QA over microscopy images requires professional biology background and microstructure recognition — a high-difficulty evaluation set for scientific image understanding.",
+      "structure": "{\n  \"image\": \"cell_microscopy.png\",\n  \"question\": \"The organelle indicated by the arrow and its function...\",\n  \"answer\": \"...\",\n  \"magnification\": \"400x\"\n}",
+      "paper": {
+        "title": "MicroVQA",
+        "authors": "Burgon et al.",
+        "venue": "arXiv 2025",
+        "url": "https://arxiv.org/abs/2505.15624"
+      }
+    },
+    "msearth": {
+      "name": "MSEarth",
+      "desc": "QA dataset for niche geoscience disciplines (geography, geology, seismology, oceanography), expert-built around professional image reasoning with high difficulty — improving scientific image understanding.",
+      "scale": "Inventory 500",
+      "tags": [
+        "Scientific Reasoning",
+        "Image Reasoning"
+      ],
+      "production": [
+        "Expert-built"
+      ],
+      "modalities": [
+        "image"
+      ],
+      "inventory": "500",
+      "weeklyOutput": "150",
+      "brief": "Covers multiple niche geoscience fields. Questions revolve around geological sections, seismic phase diagrams, nautical charts and other professional images, evaluating image reasoning on long-tail disciplines.",
+      "structure": "{\n  \"image\": \"seismic_profile.png\",\n  \"question\": \"The structural style shown in this section is...\",\n  \"answer\": \"...\",\n  \"field\": \"geology\"\n}",
+      "paper": {
+        "title": "MSEarth_MCQ",
+        "authors": "MSEarth Team",
+        "venue": "arXiv 2025",
+        "url": "https://arxiv.org/abs/2507.08122"
+      }
+    },
+    "proactive-video": {
+      "name": "Streaming Video Proactive Response",
+      "desc": "Evaluates whether models can respond at the right moment in streaming video input. Fully expert-built (pure human work, beyond model capability), multi-round proofread, durations from 15s to 30min, diverse scenes and tasks.",
+      "scale": "Inventory 1,000",
+      "tags": [
+        "Long-video Reasoning",
+        "Streaming Video",
+        "Video Reasoning",
+        "Agent"
+      ],
+      "production": [
+        "Expert-built (fully manual)"
+      ],
+      "modalities": [
+        "video"
+      ],
+      "inventory": "1,000",
+      "weeklyOutput": "500",
+      "brief": "Each sample annotates the optimal response timing and content within the stream, training models from passive answering to proactive interaction — frontier data for the proactive direction.",
+      "structure": "{\n  \"stream\": \"cooking_demo.mp4\",\n  \"respond_at\": \"00:02:31\",\n  \"response\": \"Note: turn off the heat before...\",\n  \"scenario\": \"tutorial\"\n}",
+      "paper": {
+        "title": "StreamingBench",
+        "authors": "Lin et al.",
+        "venue": "arXiv 2025",
+        "url": "https://arxiv.org/abs/2501.10829"
+      }
+    },
+    "multimodal-av": {
+      "name": "Multimodal AV Alignment (Expert-verified)",
+      "desc": "Professional audio-video description, analysis and alignment dataset built mainly by music and film experts. Every slice, description and QA pair is created in EntropyOrder's proprietary human-in-the-loop system with fine-grained audio and comprehensive video descriptions.",
+      "scale": "Inventory 500",
+      "tags": [
+        "Audio Reasoning",
+        "Video Reasoning",
+        "Long-video Reasoning"
+      ],
+      "production": [
+        "Expert-built"
+      ],
+      "modalities": [
+        "video",
+        "audio"
+      ],
+      "inventory": "500",
+      "weeklyOutput": "200",
+      "brief": "Audio-side annotations include fine-grained instrumentation, emotion and musical form; video-side covers shots, scenes and narrative elements. QA cross-verified by multiple models. For AV joint understanding training and evaluation.",
+      "structure": "{\n  \"clip\": \"orchestra_30s.mp4\",\n  \"audio_desc\": \"Strings crescendo, timpani enters at 12s...\",\n  \"video_desc\": \"Conductor close-up, slow push-in...\",\n  \"qa\": [{\"q\": \"...\", \"a\": \"...\"}]\n}",
+      "paper": {
+        "title": "MUSIC-AVQA",
+        "authors": "Li et al.",
+        "venue": "CVPR 2022",
+        "url": "https://arxiv.org/abs/2203.12196"
+      }
+    },
+    "camera-motion": {
+      "name": "Camera Motion Dataset",
+      "desc": "Frame-by-frame camera motion dataset, manually annotated at fine granularity (6fps) in EntropyOrder's proprietary annotation system with double-check and clear spatial localization.",
+      "scale": "Inventory 200",
+      "tags": [
+        "Video Reasoning",
+        "Video Generation"
+      ],
+      "production": [
+        "Human-built"
+      ],
+      "modalities": [
+        "video"
+      ],
+      "inventory": "200",
+      "weeklyOutput": "1,000",
+      "brief": "Frame-level (6fps) annotations of camera motion type, direction and intensity — high-precision supervision for camera control in video generation and shot-language parsing in video understanding.",
+      "structure": "{\n  \"clip\": \"shot_042.mp4\",\n  \"fps\": 6,\n  \"frames\": [{\"t\": 0, \"motion\": \"dolly_in\", \"speed\": 0.7}, ...],\n  \"checked\": true\n}",
+      "paper": {
+        "title": "MovieShots",
+        "authors": "MovieShots Team",
+        "venue": "arXiv 2024",
+        "url": "https://arxiv.org/abs/2404.02095"
+      }
+    },
+    "crosslingual-multimodal": {
+      "name": "Cross-lingual Multimodal Multi-task Evaluation",
+      "desc": "Comprehensive evaluation dataset built by minority-language students and teachers, covering multiple languages and multimodal input formats with diverse task types — systematically evaluating multimodal understanding and generalization in cross-lingual scenarios.",
+      "scale": "Inventory 6,000",
+      "tags": [
+        "Multilingual",
+        "Image Reasoning"
+      ],
+      "production": [
+        "Expert-built"
+      ],
+      "modalities": [
+        "text",
+        "image"
+      ],
+      "inventory": "6,000",
+      "weeklyOutput": "3,000",
+      "brief": "Built directly by native speakers of low-resource languages rather than translated. Tasks include multiple choice, fill-in-blank and open QA, truly reflecting model capability in low-resource scenarios.",
+      "structure": "{\n  \"lang\": \"sw\",\n  \"task\": \"open_qa\",\n  \"image\": \"market_scene.jpg\",\n  \"question\": \"...(swahili)...\",\n  \"answer\": \"...\"\n}",
+      "paper": {
+        "title": "M3Exam",
+        "authors": "Zhang et al.",
+        "venue": "NeurIPS 2023",
+        "url": "https://arxiv.org/abs/2306.05179"
+      }
+    },
+    "misleading-images": {
+      "name": "Misleading Images: Mirror & Contour",
+      "desc": "Manually built mirror and contour recognition dataset, designed specifically for MLLMs' weaknesses in color perception, contour perception and spatial awareness.",
+      "scale": "Inventory 500",
+      "tags": [
+        "Image Reasoning"
+      ],
+      "production": [
+        "Human-built"
+      ],
+      "modalities": [
+        "image"
+      ],
+      "inventory": "500",
+      "weeklyOutput": "250",
+      "brief": "Systematically constructed misleading samples targeting known MLLM perceptual weaknesses (mirroring, contours, spatial relations) — for locating and fixing low-level visual perception errors.",
+      "structure": "{\n  \"image\": \"mirror_ambiguous.png\",\n  \"trap\": \"mirror_reversal\",\n  \"question\": \"Is the object actually facing left or right?\",\n  \"answer\": \"left\"\n}",
+      "paper": {
+        "title": "IllusionVQA",
+        "authors": "IllusionVQA Team",
+        "venue": "arXiv 2024",
+        "url": "https://arxiv.org/abs/2403.15952"
+      }
+    },
+    "infograph": {
+      "name": "InfoGraph",
+      "desc": "Infographic understanding dataset combining web crawling, expert construction and expert review — covering charts, flow diagrams, statistics graphics and more — evaluating interpretation and reasoning over complex visual information.",
+      "scale": "Inventory 4,000",
+      "tags": [
+        "Image Generation"
+      ],
+      "production": [
+        "Web-extracted",
+        "Human-built",
+        "Generated"
+      ],
+      "modalities": [
+        "image"
+      ],
+      "inventory": "4,000",
+      "weeklyOutput": "3,000",
+      "brief": "Three data pipelines (crawl + build + review) ensure both scale and quality. Questions emphasize value reading, trend judgment and cross-figure reasoning.",
+      "structure": "{\n  \"image\": \"quarterly_revenue_chart.png\",\n  \"question\": \"Approximate QoQ growth in Q3?\",\n  \"answer\": \"~18%\",\n  \"chart_type\": \"bar\"\n}",
+      "paper": {
+        "title": "InfographicVQA",
+        "authors": "Mathew et al.",
+        "venue": "WACV 2022",
+        "url": "https://arxiv.org/abs/2104.12756"
+      }
+    },
+    "art": {
+      "name": "Art Appreciation Dataset",
+      "desc": "Expert-built art appreciation dataset covering Western painting, sculpture, porcelain, pottery, sketching, murals, photography, printmaking, textiles, installation art and calligraphy — each piece with HD multimodal materials and 1-3 expert appreciations.",
+      "scale": "Inventory 2,000",
+      "tags": [
+        "Image Reasoning",
+        "Image Generation",
+        "Creative Writing"
+      ],
+      "production": [
+        "Multi-source",
+        "Expert-built"
+      ],
+      "modalities": [
+        "image",
+        "text"
+      ],
+      "inventory": "2,000",
+      "weeklyOutput": "300",
+      "brief": "Appreciation texts written by art history experts, covering stylistic lineage, technique analysis and aesthetic judgment — training models for art understanding and professional expression.",
+      "structure": "{\n  \"image\": \"porcelain_vase_hd.jpg\",\n  \"category\": \"porcelain\",\n  \"appreciations\": [\"Natural crackle glaze...\", \"...\"],\n  \"era\": \"Song dynasty\"\n}",
+      "paper": {
+        "title": "WikiArt",
+        "authors": "WikiArt",
+        "venue": "2016",
+        "url": "https://www.wikiart.org/"
+      }
+    },
+    "yukicoder-extension": {
+      "name": "Yukicoder Extension",
+      "desc": "High-difficulty competitive programming dataset for RL code training — extending yukicoder problems with testcases, submissions, checkers/interactors, verified by sandbox judging and HITL quality inspection.",
+      "scale": "Inventory 3,000",
+      "tags": [
+        "Code Reasoning",
+        "Algorithm Reasoning",
+        "Competitive Programming",
+        "Interactive Judging"
+      ],
+      "production": [
+        "Collected",
+        "Expert-built"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "inventory": "3,000",
+      "weeklyOutput": "500",
+      "brief": "Each problem is extended with high-quality test cases and standard checkers, ready to plug into RL pipelines with stable reward signals — ideal for reinforcement learning of code reasoning.",
+      "structure": "{\n  \"problem_id\": \"yuki_2941\",\n  \"statement\": \"...\",\n  \"testcases\": {\"count\": 1200, \"gen\": \"expert\"},\n  \"checker\": \"interactor.py\",\n  \"submissions\": [...]\n}",
+      "paper": {
+        "title": "Yukicoder",
+        "authors": "yukicoder",
+        "venue": "Online Judge",
+        "url": "https://yukicoder.me/"
+      }
+    },
+    "scicode": {
+      "name": "SciCode",
+      "desc": "Scientific computing code generation and numerical reasoning dataset covering reaction-diffusion, molecular dynamics, ecological dynamical systems and more — each problem includes background, function interface, subtasks, canonical solution, test cases and validation report.",
+      "scale": "Inventory 1,000",
+      "tags": [
+        "Scientific Computing",
+        "Code Generation"
+      ],
+      "production": [
+        "Expert-built"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "inventory": "1,000",
+      "weeklyOutput": "200",
+      "brief": "Problems come from real research scenarios, requiring models to understand scientific formulas and produce numerically verifiable code — evaluating both scientific comprehension and engineering implementation.",
+      "structure": "{\n  \"background\": \"Numerical solution of reaction-diffusion...\",\n  \"interface\": \"def solve_rd(u0, t): ...\",\n  \"subtasks\": [...],\n  \"tests\": [...],\n  \"report\": \"validation.pdf\"\n}",
+      "paper": {
+        "title": "SciCode",
+        "authors": "Tian et al.",
+        "venue": "NeurIPS 2024",
+        "url": "https://arxiv.org/abs/2407.13168"
+      }
+    },
+    "oj-competition": {
+      "name": "OJ Competition Extension",
+      "desc": "Premium competition problems where seed-2.0-pro pass@2 = 0, expert-built with ~1000 additional testcases per problem for comprehensive difficulty evaluation, plus updated submissions.",
+      "scale": "Inventory 4,000",
+      "tags": [
+        "Code Capability"
+      ],
+      "production": [
+        "Multi-source",
+        "Expert-built"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "inventory": "4,000",
+      "weeklyOutput": "1,000",
+      "brief": "Filters competition problems that the strongest current model fails in both samples, each with 1000+ test cases and updated submissions — a hard ceiling for code capability evaluation.",
+      "structure": "{\n  \"problem_id\": \"oj_ext_0173\",\n  \"pass@2(seed-2.0-pro)\": 0,\n  \"testcases\": 1000,\n  \"submissions\": [...]\n}",
+      "paper": {
+        "title": "CodeContests",
+        "authors": "Li et al.",
+        "venue": "Science 2022",
+        "url": "https://arxiv.org/abs/2203.07814"
+      }
+    },
+    "openclaw": {
+      "name": "OpenClaw Trajectories",
+      "desc": "Records OpenClaw operation trajectories in structured tasks, including complete workspace, sessions and more — training and evaluating planning, execution and error-correction for agent capability building.",
+      "scale": "Inventory 30,000",
+      "tags": [
+        "Tool Calling",
+        "Agent"
+      ],
+      "production": [
+        "Multi-source",
+        "Human-built"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "inventory": "30,000",
+      "weeklyOutput": "3,000",
+      "brief": "Trajectories fully preserve task context, tool call sequences and intermediate states, supporting multiple agent training paradigms such as behavior cloning and process reward modeling.",
+      "structure": "{\n  \"task\": \"Organize download dir & report\",\n  \"workspace\": {...},\n  \"sessions\": [{\"tool\": \"shell\", \"args\": [...], \"obs\": \"...\"}],\n  \"outcome\": \"success\"\n}",
+      "paper": {
+        "title": "OpenClaw Trajectories Demo",
+        "authors": "OpenClaw",
+        "venue": "2025",
+        "url": "https://github.com/Entropyorder"
+      }
+    },
+    "agentos-trajectory": {
+      "name": "AgentOS Trajectory",
+      "desc": "Multi-turn, long-horizon tool-calling trajectory dataset for AgentOS scenarios — with call-level raw request/response, code session event streams and structured task traces — training and evaluating planning, tool use, execution correction and complex task delivery.",
+      "scale": "Inventory 30,000",
+      "tags": [
+        "Agent Planning",
+        "Tool Calling",
+        "Multi-turn Execution",
+        "Trajectory Learning"
+      ],
+      "production": [
+        "User interaction traces",
+        "Automated QC"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "inventory": "30,000",
+      "weeklyOutput": "3,000",
+      "brief": "Call-level granularity of real user-AgentOS interactions. Long-horizon tasks cover multi-tool coordination and mid-course correction — core data for training delivery-oriented agents.",
+      "structure": "{\n  \"goal\": \"Deploy service & fix startup failure\",\n  \"events\": [{\"type\": \"llm_call\", ...}, {\"type\": \"exec\", ...}],\n  \"turns\": 47,\n  \"delivered\": true\n}",
+      "paper": {
+        "title": "GAIA",
+        "authors": "Mialon et al.",
+        "venue": "arXiv 2023",
+        "url": "https://arxiv.org/abs/2311.12983"
+      }
+    },
+    "gdpval-extension": {
+      "name": "GDPval Extension",
+      "desc": "Agent tool-calling trajectory dataset for real business scenarios — financial compliance, HR, cloud computing, retail operations, tax accounting — including query, attachments, expert deliverables, rubrics, multi-model traces and final deliverables.",
+      "scale": "Inventory 2,000",
+      "tags": [
+        "Agent Planning",
+        "Tool Calling",
+        "Multi-file Understanding"
+      ],
+      "production": [
+        "Expert-built",
+        "Auto-verified"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "inventory": "2,000",
+      "weeklyOutput": "800",
+      "brief": "Gold-standard real industry deliverables with multi-model trace comparison revealing capability gaps. Rubric-based evaluation directly applicable to benchmarking agent business-delivery capability.",
+      "structure": "{\n  \"query\": \"Monthly business analysis for retailer\",\n  \"attachments\": [...],\n  \"expert_deliverable\": \"report.docx\",\n  \"rubric\": {...},\n  \"model_traces\": [...]\n}",
+      "paper": {
+        "title": "GDPval",
+        "authors": "OpenAI",
+        "venue": "2025",
+        "url": "https://openai.com/index/gdpval/"
+      }
+    },
+    "skillbench": {
+      "name": "SkillBench",
+      "desc": "End-to-end task dataset for agent skill evaluation and training — real business scenarios in finance, legal, security, audit — including task description, environment, data, tests, canonical solutions and execution traces.",
+      "scale": "Inventory 30,000",
+      "tags": [
+        "Agent Planning",
+        "Tool Calling",
+        "Code Execution"
+      ],
+      "production": [
+        "Expert-built",
+        "Auto-verified"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "inventory": "30,000",
+      "weeklyOutput": "3,000",
+      "brief": "Each task packages a complete execution environment with runnable tests, plus both canonical solution and expert traces — usable both as a skill benchmark and as SFT/RL training data.",
+      "structure": "{\n  \"skill\": \"Contract clause extraction\",\n  \"env\": \"docker://skillbench/legal\",\n  \"data\": [...],\n  \"tests\": [...],\n  \"solution\": \"...\",\n  \"trace\": [...]\n}",
+      "paper": {
+        "title": "skillsbench",
+        "authors": "SkillBench Team",
+        "venue": "2025",
+        "url": "https://github.com/Entropyorder"
+      }
+    },
+    "search-retrieval": {
+      "name": "Information Retrieval Data",
+      "desc": "Long-chain information reasoning and retrieval data built two ways: expert-curated multi-hop (>5 hops) questions from internet corners, and expert-distilled fuzzy retrieval needs from real users — ensuring diversity.",
+      "scale": "Inventory 2,000",
+      "tags": [
+        "Information Retrieval",
+        "Tool Calling",
+        "Agent"
+      ],
+      "production": [
+        "Multi-source",
+        "Expert-built"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "inventory": "2,000",
+      "weeklyOutput": "800",
+      "brief": "Dual-channel construction of multi-hop retrieval chains and real fuzzy needs, double-checked by prompted LLM and humans — training deep retrieval and evidence integration in open-web environments.",
+      "structure": "{\n  \"question\": \"...question requiring 5+ hops...\",\n  \"hops\": 6,\n  \"evidence_chain\": [...],\n  \"answer\": \"...\",\n  \"source\": \"expert_curated\"\n}",
+      "paper": {
+        "title": "FRAMES",
+        "authors": "Krishna et al.",
+        "venue": "arXiv 2024",
+        "url": "https://arxiv.org/abs/2409.12941"
+      }
+    },
+    "open-challenge": {
+      "name": "Open-ended Real-world Retrieval Challenges",
+      "desc": "Reasoning, retrieval and evaluation dataset for complex real-world scenarios — carefully designed single/multi-turn retrieval questions requiring industry expert-level knowledge, as encountered by real users.",
+      "scale": "Inventory 1,000",
+      "tags": [
+        "Information Retrieval"
+      ],
+      "production": [
+        "Expert-built"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "inventory": "1,000",
+      "weeklyOutput": "500",
+      "brief": "Questions come from real expert-level retrieval challenges faced by users, in single and multi-turn forms — evaluating the full chain of retrieval, reasoning and answer evaluation under complex real-world constraints.",
+      "structure": "{\n  \"scenario\": \"Real business consulting\",\n  \"turns\": [{\"q\": \"...\", \"evidence\": [...], \"a\": \"...\"}],\n  \"expertise\": \"legal\"\n}",
+      "paper": {
+        "title": "BrowseComp",
+        "authors": "OpenAI",
+        "venue": "2025",
+        "url": "https://openai.com/index/browsecomp/"
+      }
+    }
+  }
+}
